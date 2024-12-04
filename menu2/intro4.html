@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>발달장애인의 일과 삶</title>
+        <link rel="stylesheet" href="../css/wvFont.css" />
+        <link rel="stylesheet" href="../css/wvCommon.css" />
+        <link rel="stylesheet" href="../css/wvUser.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <script defer src="../js/wvScript.js"></script>
+        <script defer src="../js/scrollTrigger.js"></script>
+    </head>
+    <body>
+        <!-- 스킵 메뉴 -->
+        <div class="skip-menu">
+            <a href="#headSkip">메뉴로 이동</a>
+            <a href="#contentSkip">본문 바로가기</a>
+        </div>
+
+        <header class="header">
+            <div class="flex-wrap">
+                <h1 class="header-logo">
+                    <a href="/main.html"><img src="/images/logo.svg" alt="한국장애인고용공단 고용개발원" /></a>
+                </h1>
+                <nav class="header-gnb" id="headSkip">
+                    <ul class="gnb-depth-1">
+                        <li class="depth-1">
+                            <a href="#" class="depth-1-link"><span>통계로 보는 장애인 노동시장</span></a>
+                            <ul class="gnb-depth-2">
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-1.html" class="depth-2-link"><span>장애인의 경제활동</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-2.html" class="depth-2-link"><span>기업체의 장애인고용</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-3.html" class="depth-2-link"><span>발달장애인의 일과 삶</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-4.html" class="depth-2-link"><span>등록장애인 현황</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth-1">
+                            <a href="#" class="depth-1-link active"><span>장애인고용 통계조사 소개</span></a>
+                            <ul class="gnb-depth-2">
+                                <li class="depth-2">
+                                    <a href="/menu2/intro1.html" class="depth-2-link"><span>장애인경제활동 실태조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro2.html" class="depth-2-link"><span>장애인고용패널조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro3.html" class="depth-2-link"><span>기업체장애인고용실태조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro4.html" class="depth-2-link"><span>발달장애인 일과 삶 실태조사</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth-1">
+                            <a href="/menu3/guide1.html" class="depth-1-link"><span>통계자료 활용 안내</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 모바일 메뉴 -->
+                <div class="mobile-gnb">
+                    <button class="sidebar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="sidebar-wrap">
+                        <div class="sidebar">
+                            <ul class="gnb-depth-1">
+                                <li class="depth-1">
+                                    <a href="#" class="depth-1-link">통계로 보는 장애인 노동시장</a>
+                                    <ul class="gnb-depth-2">
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-1.html" class="depth-2-link"><span>장애인의 경제활동</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-2.html" class="depth-2-link"><span>기업체의 장애인고용</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-3.html" class="depth-2-link"><span>발달장애인의 일과 삶</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-4.html" class="depth-2-link"><span>등록장애인 현황</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="depth-1">
+                                    <a href="#" class="depth-1-link">장애인고용 통계조사 소개</a>
+                                    <ul class="gnb-depth-2">
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro1.html" class="depth-2-link"><span>장애인경제활동 실태조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro2.html" class="depth-2-link"><span>장애인고용패널조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro3.html" class="depth-2-link"><span>기업체장애인고용실태조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro4.html" class="depth-2-link"><span>발달장애인 일과 삶 실태조사</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="depth-1">
+                                    <a href="/menu3/guide1.html" class="depth-1-link">통계자료 활용 안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- banner -->
+        <main id="contentSkip" class="content-page">
+            <!-- banner -->
+            <div class="banner yellow">
+                <div class="wrap-inner">
+                    <h2 class="banner-title">발달장애인의 일과 삶</h2>
+                    <div class="location-group">
+                        <ul class="location-list">
+                            <li class="location-item"><img src="../images/icon-home.svg" alt="" /><span class="skip">홈</span></li>
+                            <li class="location-item">장애인고용 통계조사 소개</li>
+                            <li class="location-item">발달장애인의 일과 삶</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <section class="intro-page">
+                <h2 class="skip">발달장애인의 일과 삶</h2>
+                <div class="wrap-inner">
+                    <div class="intro-text-group">
+                        <h4 class="text-title">조사목적</h4>
+                        <div class="text-description">
+                            발달장애인의 생활 및 취업실태, 서비스 욕구의 파악
+                            <small class="text_brown">※ 대리응답이 아닌 발달장애인 당사자와 보호자의 의견을 구분하여 파악</small>
+                        </div>
+                    </div>
+                    <div class="intro-text-group">
+                        <h4 class="text-title">조사대상</h4>
+                        <div class="text-description">
+                            만 15세 이상 발달장애인이 1명 이상 포함된 가구의 발달장애인 당사자 및 보호자
+                            <small class="text_gray">※ 발달장애인 당사자는 조사참여 가능수준 판별 결과에 따라 조사 참여가 불가능한 사람은 제외</small>
+                        </div>
+                    </div>
+                    <div class="intro-text-group">
+                        <h4 class="text-title">조사내용</h4>
+                        <div class="text-description multi-img-group">
+                            <div class="multi-img-item">
+                                <img
+                                    src="../images/intro-content-img-04(1).png"
+                                    alt="만 15세 이상 발달장애인/ 취업과 일자리(취업자)(취업동기, 필요한 도움, 지속 근무 의사 등), 취업과 일자리(미취업자)(취업 희망 여부, 희망 일자리 등), 공통(건강과 행복, 하고싶은 활동, 미래에 대한 생각 등)"
+                                />
+                            </div>
+                            <div class="multi-img-item">
+                                <img
+                                    src="../images/intro-content-img-04(2).png"
+                                    alt="보호자/ 교육(진로계획 등, 교육 이수 상황), 취업자 특성(취업동기, 취업과정, 일반고용 전환 등), 미취업자 특성(취업경험, 취업 의망(보호자), 구직활동 등), 작업적 능력과 고용서비스 이용(취업지지, 근로능력, 고용서비스 경혐/욕구 등), 일상생활(건강 조기노화, 일상생활 도움, 사회참여, 자립의지 등), 가구 및 보호자(돌봄 시간 및 부담, 보호자 삶의 만족 등), 인적사항 및 장애특성(의사소통, 인지능력, 도전적 행동 등)"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-text-group">
+                        <h4 class="text-title">조사방법</h4>
+                        <div class="text-description">
+                            태블릿 PC를 활용한 가구방문 면접조<br />
+                            발달장애인 당사자를 조사참여 가능 수준에 따라 네 그룹으로 구분하고, 각 수준별 특수조사표로 조사
+                            <div class="intro-info-image mt-l">
+                                <img
+                                    src="../images/intro-content-img-04(3).png"
+                                    alt="보통 읽기 자료 그룹(PL그룹) → 읽기 쉬운 조사표+PL문항추가, 읽기 쉬운 자료 그룹(ER그룹) → 읽기 쉬운 조사표, 그림 상징 그룹 → 그림상징 조사표, 조사참여불가능 그룹"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-text-group">
+                        <h4 class="text-title">
+                            조사주기 및 <br />
+                            공표시점
+                        </h4>
+                        <div class="text-description">
+                            <b>조사주기 :</b> 1년 <br />
+                            <b>기준시점 :</b> 6월 15일<br />
+                            <b>조사기간 :</b> 6월～9월<br />
+                            <b>공표시기 :</b> 익년 5월<br />
+                        </div>
+                    </div>
+                    <div class="intro-text-group">
+                        <h4 class="text-title">조사활용</h4>
+                        <div class="text-description">
+                            발달장애인만의 고유 특성, 당사자와 보호자의 개별적 욕구 등을 도출하여 <br />
+                            맞춤형 고용·복지서비스 설계 및 관련 연구 수행에 활용
+                        </div>
+                    </div>
+                </div>
+                <div class="content-bg-section">
+                    <div class="inner">
+                        <div class="features-group yellow">
+                            <h3 class="features-title">
+                                발달장애인 일과 삶 실태조사
+                                <strong>주요 특징</strong>
+                            </h3>
+                            <ul class="features-list">
+                                <li class="features-item">
+                                    <div class="img-wrap">
+                                        <img src="../images/intro4-features-image-01.png" alt="" />
+                                    </div>
+                                    <div class="text-wrap">
+                                        발달장애인용 특수조사표 <br />
+                                        개발‧활용을 통한 통계 정확도 제고
+                                    </div>
+                                </li>
+                                <li class="features-item">
+                                    <div class="img-wrap">
+                                        <img src="../images/intro4-features-image-02.png" alt="" />
+                                    </div>
+                                    <div class="text-wrap">
+                                        발달장애인 당사자와 보호자를 연계하여 조사 <br />
+                                        <small>* 서로의 생각과 의견을 비교 가능</small>
+                                    </div>
+                                </li>
+                                <li class="features-item">
+                                    <div class="img-wrap">
+                                        <img src="../images/intro4-features-image-03.png" alt="" />
+                                    </div>
+                                    <div class="text-wrap">발달장애인 당사자 직접 참여를 통한 조사표 및 조사방법론 개발</div>
+                                </li>
+                                <li class="features-item">
+                                    <div class="img-wrap">
+                                        <img src="../images/intro4-features-image-04.png" alt="" />
+                                    </div>
+                                    <div class="text-wrap">
+                                        알기 쉬운 조사결과 인포그래픽 제작 <br />
+                                        <small>* 조사종료 후 참여자에게 제공함으로써 지속적인 신뢰관계 구축</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- quick menu -->
+            <div class="quick-menu">
+                <h3 class="quick-menu-title">
+                    QUICK <br />
+                    MENU
+                </h3>
+                <ul>
+                    <li>
+                        <a href="../menu1/sub-1.html">
+                            <img src="../images/icon-quick-01.svg" alt="" />
+                            <span class="text"
+                                >노동시장 <br />
+                                통계</span
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../menu2/intro1.html">
+                            <img src="../images/icon-quick-02.svg" alt="" />
+                            <span class="text">조사 소개</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../menu3/guide1.html">
+                            <img src="../images/icon-quick-03.svg" alt="" />
+                            <span class="text"
+                                >데이터 및 <br />
+                                보고서</span
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div class="wrap">
+                <div class="footer-top">
+                    <img src="/images/logo-s.svg" alt="kead" />
+                    <ul>
+                        <li><a href="https://www.kead.or.kr/directions/directionsPage.do?branchId=101&menuId=MENU0819" title="새 창 열림" target="_blank">찾아오시는길</a></li>
+                        <li><a href="https://www.kead.or.kr/common/copyProtectionPolicy.do?menuId=MENU1424" title="새 창 열림" target="_blank">저작권보호정책</a></li>
+                        <li><a href="https://www.kead.or.kr/bbs/relatedsite/bbsPage.do?menuId=MENU1418" title="새 창 열림" target="_blank">관련사이트</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>(13619) 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>
+                    <p>대표번호 1588-1519 (유료) 평일 09:00~1800 (휴게시간 : 12:00~13:00)</p>
+                    <p class="copyright">Copyright (c) 2011 한국장애인고용공단 고용개발원 All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

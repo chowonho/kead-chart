@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>장애인고용 통계조사</title>
+        <link rel="stylesheet" href="./css/wvFont.css" />
+        <link rel="stylesheet" href="./css/wvCommon.css" />
+        <link rel="stylesheet" href="./css/wvUser.css" />
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script defer src="./js/wvScript.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                gsap.to('.main-bg', {
+                    duration: 0.5,
+                    delay: 0.7,
+                    filter: 'blur(0px)',
+                    ease: 'power2.out',
+                });
+                setTimeout(() => {
+                    gsap.utils.toArray('.main-conts__item').forEach((item, index) => {
+                        gsap.fromTo(
+                            item,
+                            {
+                                // 시작 상태를 지정합니다.
+                                x: 2000,
+                                opacity: 0,
+                            },
+                            {
+                                opacity: 1,
+                                x: 0,
+                                duration: 1,
+                                ease: 'bounce.inout',
+                                delay: index * 0.2,
+                            }
+                        );
+                    });
+                }, 700);
+
+                function floatingObject(selector, delay, size) {
+                    // Create and return the GSAP animation
+                    // setTimeout(()=>{
+                    return gsap.to(
+                        selector,
+                        random(1.5, 2.5), // Random duration between 1.5 and 2.5 seconds
+                        {
+                            y: size, // Move 20px in the y-axis
+                            repeat: -1, // Infinite repeat
+                            yoyo: true, // Play animation forward and then backward
+                            ease: Power1.easeInOut, // Smooth easing
+                            delay: random(0, delay), // Random delay
+                        }
+                    );
+                    // }, 4000)
+                }
+
+                function random(min, max) {
+                    return parseFloat((Math.random() * (max - min) + min).toFixed(2));
+                }
+
+                // Store GSAP animation objects for later control
+                const animations = {
+                    item1: floatingObject('.main-conts__item1', 1, 15),
+                    item2: floatingObject('.main-conts__item2', 0, 10),
+                    item3: floatingObject('.main-conts__item3', 1.5, 5),
+                    item4: floatingObject('.main-conts__item4', 2, 15),
+                };
+
+                // // Select all items
+                const items = document.querySelectorAll('.main-conts__item');
+
+                // Add a listener to toggle play/pause based on the presence of the 'on' class
+                items.forEach((item, index) => {
+                    const animation = animations[`item${index + 1}`];
+
+                    // Observe class changes
+                    const observer = new MutationObserver(() => {
+                        if (item.classList.contains('on')) {
+                            animation.pause();
+                        } else {
+                            animation.play();
+                        }
+                    });
+
+                    // Observe the `class` attribute for changes
+                    observer.observe(item, { attributes: true, attributeFilter: ['class'] });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- 스킵 메뉴 -->
+        <div class="skip-menu">
+            <a href="#headSkip">메뉴로 이동</a>
+            <a href="#contentSkip">본문 바로가기</a>
+        </div>
+
+        <header class="header">
+            <div class="flex-wrap">
+                <h1 class="header-logo">
+                    <a href="/main.html"><img src="/images/logo.svg" alt="한국장애인고용공단 고용개발원" /></a>
+                </h1>
+                <nav class="header-gnb" id="headSkip">
+                    <ul class="gnb-depth-1">
+                        <li class="depth-1">
+                            <a href="#" class="depth-1-link"><span>통계로 보는 장애인 노동시장</span></a>
+                            <ul class="gnb-depth-2">
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-1.html" class="depth-2-link"><span>장애인의 경제활동</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-2.html" class="depth-2-link"><span>기업체의 장애인고용</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-3.html" class="depth-2-link"><span>발달장애인의 일과 삶</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-4.html" class="depth-2-link"><span>등록장애인 현황</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth-1">
+                            <a href="#" class="depth-1-link"><span>장애인고용 통계조사 소개</span></a>
+                            <ul class="gnb-depth-2">
+                                <li class="depth-2">
+                                    <a href="/menu2/intro1.html" class="depth-2-link"><span>장애인경제활동 실태조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro2.html" class="depth-2-link"><span>장애인고용패널조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro3.html" class="depth-2-link"><span>기업체장애인고용실태조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro4.html" class="depth-2-link"><span>발달장애인 일과 삶 실태조사</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth-1">
+                            <a href="/menu3/guide1.html" class="depth-1-link"><span>통계자료 활용 안내</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 모바일 메뉴 -->
+                <div class="mobile-gnb">
+                    <button class="sidebar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="sidebar-wrap">
+                        <div class="sidebar">
+                            <ul class="gnb-depth-1">
+                                <li class="depth-1">
+                                    <a href="#" class="depth-1-link">통계로 보는 장애인 노동시장</a>
+                                    <ul class="gnb-depth-2">
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-1.html" class="depth-2-link"><span>장애인의 경제활동</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-2.html" class="depth-2-link"><span>기업체의 장애인고용</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-3.html" class="depth-2-link"><span>발달장애인의 일과 삶</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-4.html" class="depth-2-link"><span>등록장애인 현황</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="depth-1">
+                                    <a href="#" class="depth-1-link">장애인고용 통계조사 소개</a>
+                                    <ul class="gnb-depth-2">
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro1.html" class="depth-2-link"><span>장애인경제활동 실태조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro2.html" class="depth-2-link"><span>장애인고용패널조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro3.html" class="depth-2-link"><span>기업체장애인고용실태조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro4.html" class="depth-2-link"><span>발달장애인 일과 삶 실태조사</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="depth-1">
+                                    <a href="/menu3/guide1.html" class="depth-1-link">통계자료 활용 안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-bg" id="contentSkip">
+            <div class="main-wrap">
+                <h2 class="main-title">
+                    <p>장애인 노동시장 전반을 아우르는</p>
+                    <strong>장애인고용<br />통계조사</strong>
+                    <a href="./menu1/sub-1.html" class="main-rink" title="장애인고용 통계조사 바로가기"><img src="/images/go-line-b.svg" alt="" /></a>
+                </h2>
+
+                <div class="main-conts">
+                    <div class="main-conts__item main-conts__item1">
+                        <div>
+                            <h3>장애인의 <strong>경제활동상태</strong>가 궁금해요!</h3>
+                            <p class="main-conts__text">장애인 고용률, 실업률, 취업희망자</p>
+                        </div>
+
+                        <button type="button" class="main-rink"><img src="/images/go.svg" alt="" /></button>
+
+                        <a href="./menu1/sub-1.html" title="통계조사 바로가기" class="main-rink btn--rink"><img src="/images/go.svg" alt="" /></a>
+
+                        <div class="main-conts__rinks">
+                            <a href="./menu2/intro2.html" class="bg--purple">장애인고용패널조사 조사소개</a>
+                            <a href="./menu2/intro1.html">장애인의 경제활동 실태조사 조사소개</a>
+                        </div>
+                    </div>
+                    <div class="main-conts__item main-conts__item2">
+                        <div>
+                            <h3>
+                                기업체의<br />
+                                <strong>장애인 고용실태</strong>가 궁금해요!
+                            </h3>
+                            <p class="main-conts__text">고용 현황, 채용·직무, 서비스 욕구</p>
+                        </div>
+
+                        <button type="button" class="main-rink"><img src="/images/go.svg" alt="" /></button>
+
+                        <a href="./menu1/sub-2.html" title="통계조사 바로가기" class="main-rink btn--rink"><img src="/images/go.svg" alt="" /></a>
+
+                        <div class="main-conts__rinks">
+                            <a href="./menu2/intro3.html">기업체장애인고용실태조사 조사소개</a>
+                        </div>
+                    </div>
+                    <div class="main-conts__item main-conts__item3">
+                        <div>
+                            <h3>
+                                <strong
+                                    >발달장애인의<br />
+                                    일과 삶</strong
+                                >이 <br />
+                                궁금해요!
+                            </h3>
+                            <p class="main-conts__text">당사자와 보호자의 취업 욕구, 일자리 특성</p>
+                        </div>
+
+                        <button type="button" class="main-rink"><img src="/images/go.svg" alt="" /></button>
+
+                        <a href="./menu1/sub-3.html" title="통계조사 바로가기" class="main-rink btn--rink"><img src="/images/go.svg" alt="" /></a>
+
+                        <div class="main-conts__rinks">
+                            <a href="./menu2/intro4.html">발달장애인의 일과 삶 실태조사 조사소개</a>
+                        </div>
+                    </div>
+                    <div class="main-conts__item main-conts__item4">
+                        <div>
+                            <h3>
+                                우리나라<br />
+                                <strong>장애인은 모두 몇 명<br /></strong>인가요?
+                            </h3>
+                            <p class="main-conts__text">등록장애인 규모, 인구 구성의 변화</p>
+                        </div>
+
+                        <a href="./menu1/sub-4.html" title="통계조사 바로가기" class="main-rink"><img src="/images/go.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="wrap">
+                <div class="footer-top">
+                    <img src="/images/logo-s.svg" alt="kead" />
+                    <ul>
+                        <li><a href="https://www.kead.or.kr/directions/directionsPage.do?branchId=101&menuId=MENU0819" title="새 창 열림" target="_blank">찾아오시는길</a></li>
+                        <li><a href="https://www.kead.or.kr/common/copyProtectionPolicy.do?menuId=MENU1424" title="새 창 열림" target="_blank">저작권보호정책</a></li>
+                        <li><a href="https://www.kead.or.kr/bbs/relatedsite/bbsPage.do?menuId=MENU1418" title="새 창 열림" target="_blank">관련사이트</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>(13619) 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>
+                    <p>대표번호 1588-1519 (유료) 평일 09:00~1800 (휴게시간 : 12:00~13:00)</p>
+                    <p class="copyright">Copyright (c) 2011 한국장애인고용공단 고용개발원 All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            let isOpen = false;
+            document.addEventListener('DOMContentLoaded', () => {
+                handleClickOutside('.main-conts', '.main-conts__item');
+            });
+            const goLinks = document.querySelectorAll('.main-conts__item .main-rink');
+            const contsItems = document.querySelectorAll('.main-conts__item');
+            goLinks.forEach((goLink) => {
+                goLink.addEventListener('click', function () {
+                    isOpen = true;
+                    removeActive(contsItems);
+                    this.parentNode.classList.add('on');
+                });
+            });
+        </script>
+    </body>
+</html>

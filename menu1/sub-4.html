@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>등록장애인 현황</title>
+        <link rel="stylesheet" href="../css/wvFont.css" />
+        <link rel="stylesheet" href="../css/wvCommon.css" />
+        <link rel="stylesheet" href="../css/wvUser.css" />
+
+        <script src="../js/wvFunc.js"></script>
+        <script src="../js/data/wvDataTable_2024.js"></script>
+        <script src="../js/data/wvDataChart_2024.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+        <script src="../js/chart-4.js"></script>
+        <script defer src="../js/wvScript.js"></script>
+    </head>
+    <body>
+        <!-- 스킵 메뉴 -->
+        <div class="skip-menu">
+            <a href="#headSkip">메뉴로 이동</a>
+            <a href="#contentSkip">본문 바로가기</a>
+        </div>
+
+        <header class="header">
+            <div class="flex-wrap">
+                <h1 class="header-logo">
+                    <a href="/main.html"><img src="/images/logo.svg" alt="한국장애인고용공단 고용개발원" /></a>
+                </h1>
+                <nav class="header-gnb" id="headSkip">
+                    <ul class="gnb-depth-1">
+                        <li class="depth-1">
+                            <a href="#" class="depth-1-link active"><span>통계로 보는 장애인 노동시장</span></a>
+                            <ul class="gnb-depth-2">
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-1.html" class="depth-2-link"><span>장애인의 경제활동</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-2.html" class="depth-2-link"><span>기업체의 장애인고용</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-3.html" class="depth-2-link"><span>발달장애인의 일과 삶</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-4.html" class="depth-2-link"><span>등록장애인 현황</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth-1">
+                            <a href="#" class="depth-1-link"><span>장애인고용 통계조사 소개</span></a>
+                            <ul class="gnb-depth-2">
+                                <li class="depth-2">
+                                    <a href="/menu2/intro1.html" class="depth-2-link"><span>장애인경제활동 실태조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro2.html" class="depth-2-link"><span>장애인고용패널조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro3.html" class="depth-2-link"><span>기업체장애인고용실태조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro4.html" class="depth-2-link"><span>발달장애인 일과 삶 실태조사</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth-1">
+                            <a href="/menu3/guide1.html" class="depth-1-link"><span>통계자료 활용 안내</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 모바일 메뉴 -->
+                <div class="mobile-gnb">
+                    <button class="sidebar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="sidebar-wrap">
+                        <div class="sidebar">
+                            <ul class="gnb-depth-1">
+                                <li class="depth-1">
+                                    <a href="#" class="depth-1-link">통계로 보는 장애인 노동시장</a>
+                                    <ul class="gnb-depth-2">
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-1.html" class="depth-2-link"><span>장애인의 경제활동</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-2.html" class="depth-2-link"><span>기업체의 장애인고용</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-3.html" class="depth-2-link"><span>발달장애인의 일과 삶</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-4.html" class="depth-2-link"><span>등록장애인 현황</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="depth-1">
+                                    <a href="#" class="depth-1-link">장애인고용 통계조사 소개</a>
+                                    <ul class="gnb-depth-2">
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro1.html" class="depth-2-link"><span>장애인경제활동 실태조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro2.html" class="depth-2-link"><span>장애인고용패널조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro3.html" class="depth-2-link"><span>기업체장애인고용실태조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro4.html" class="depth-2-link"><span>발달장애인 일과 삶 실태조사</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="depth-1">
+                                    <a href="/menu3/guide1.html" class="depth-1-link">통계자료 활용 안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- banner -->
+        <main id="contentSkip">
+            <div class="banner blue">
+                <div class="wrap-inner">
+                    <h2 class="banner-title">등록장애인 현황</h2>
+                    <div class="location-group">
+                        <ul class="location-list">
+                            <li class="location-item"><img src="../images/icon-home.svg" alt="" /><span class="skip">홈</span></li>
+                            <li class="location-item">장애인의 노동시장 현황</li>
+                            <li class="location-item">등록장애인 현황</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-cont">
+                <ul class="chart-card-list wide-card-list">
+                    <li class="chart-card-item">
+                        <div class="title-group">
+                            <h3 class="chart-title">등록장애인 추이</h3>
+                            <div class="btn-group">
+                                <a href="" class="btn--download" title="다운로드"></a>
+                                <button type="button" class="btn--info" title="상세내용보기"></button>
+                                <button type="button" class="btn--data modal-open-btn" title="통계표보기"></button>
+                            </div>
+                        </div>
+                        <div class="chart-info">
+                            <div class="chart-info-text">
+                                <div class="text-group">
+                                    <dl>
+                                        <dt>단위 :</dt>
+                                        <dd>%, 명</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>통계출처 :</dt>
+                                        <dd>보건복지부 등록장애인현황, 행정안전부 주민등록인구통계</dd>
+                                    </dl>
+                                </div>
+                                <p class="annotation-text">
+                                    주석 : 1.연도말 기준임 <br />
+                                    2. 2000년 제1차 장애범주 확대(뇌병변, 자폐, 정신, 신장, 심장장애 등 5종 추가) <br />
+                                    3. 2003년 제2차 장애범주 확대(안면변형, 장루, 간, 질, 호흡기장애 등 5종 추가)
+                                </p>
+                            </div>
+                            <button type="button" class="btn-info-close" title="내용 닫기"></button>
+                        </div>
+                        <div class="chart-area chart-scroll">
+                            <canvas id="chart_401"></canvas>
+                        </div>
+                    </li>
+                    <li class="chart-card-item">
+                        <div class="title-group">
+                            <h3 class="chart-title">등록장애인 성별 분포</h3>
+                            <div class="btn-group">
+                                <a href="" class="btn--download" title="다운로드"></a>
+                                <button type="button" class="btn--info" title="상세내용보기"></button>
+                                <button type="button" class="btn--data modal-open-btn" title="통계표보기"></button>
+                            </div>
+                        </div>
+                        <div class="chart-info">
+                            <div class="chart-info-text">
+                                <div class="text-group">
+                                    <dl>
+                                        <dt>단위:</dt>
+                                        <dd>%</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>통계출처:</dt>
+                                        <dd>
+                                            한국장애인고용공단 발달장애인 일과 삶 실태조사(2023년) <br />
+                                            한국장애인고용공단 장애인경제활동실태조사(2023년 5월)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <p class="annotation-text">주석 :수/15세 이상 인구)×100</p>
+                            </div>
+                            <button type="button" class="btn-info-close" title="내용 닫기"></button>
+                        </div>
+                        <div class="chart-area chart-scroll">
+                            <canvas id="chart_402"></canvas>
+                        </div>
+                    </li>
+                    <li class="chart-card-item">
+                        <div class="title-group">
+                            <h3 class="chart-title">등록장애인 연령 분포</h3>
+                            <div class="btn-group">
+                                <a href="" class="btn--download" title="다운로드"></a>
+                                <button type="button" class="btn--info" title="상세내용보기"></button>
+                                <button type="button" class="btn--data modal-open-btn" title="통계표보기"></button>
+                            </div>
+                        </div>
+                        <div class="chart-info">
+                            <div class="chart-info-text">
+                                <div class="text-group">
+                                    <dl>
+                                        <dt>단위:</dt>
+                                        <dd>%</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>통계출처:</dt>
+                                        <dd>한국장애인고용공단 발달장애인 일과 삶 실태조사(2023년)</dd>
+                                    </dl>
+                                </div>
+                                <p class="annotation-text">주석 : 연도말 기준임</p>
+                            </div>
+                            <button type="button" class="btn-info-close" title="내용 닫기"></button>
+                        </div>
+                        <div class="chart-area chart-scroll">
+                            <canvas id="chart_403"></canvas>
+                        </div>
+                    </li>
+                    <li class="chart-card-item">
+                        <div class="title-group">
+                            <h3 class="chart-title">65세 이상 등록장애인 비율</h3>
+                            <div class="btn-group">
+                                <a href="" class="btn--download" title="다운로드"></a>
+                                <button type="button" class="btn--info" title="상세내용보기"></button>
+                                <button type="button" class="btn--data modal-open-btn" title="통계표보기"></button>
+                            </div>
+                        </div>
+                        <div class="chart-info">
+                            <div class="chart-info-text">
+                                <div class="text-group">
+                                    <dl>
+                                        <dt>단위:</dt>
+                                        <dd>%</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>통계출처:</dt>
+                                        <dd>한국장애인고용공단 발달장애인 일과 삶 실태조사(2023년)</dd>
+                                    </dl>
+                                </div>
+                                <p class="annotation-text">
+                                    주석 : 1) 가능과 제한적으로 가능하다고 응답한 경우만 제시함 <br />2) 항목별 모름/응답거절을 표시하지 않았으며, 따라서 항목별 합과 전체가 일치하지 않음
+                                </p>
+                            </div>
+                            <button type="button" class="btn-info-close" title="내용 닫기"></button>
+                        </div>
+                        <div class="chart-area">
+                            <canvas id="chart_404"></canvas>
+                        </div>
+                    </li>
+                    <li class="chart-card-item">
+                        <div class="title-group">
+                            <h3 class="chart-title">15-64세 등록장애인 추이</h3>
+                            <div class="btn-group">
+                                <a href="" class="btn--download" title="다운로드"></a>
+                                <button type="button" class="btn--info" title="상세내용보기"></button>
+                                <button type="button" class="btn--data modal-open-btn" title="통계표보기"></button>
+                            </div>
+                        </div>
+                        <div class="chart-info">
+                            <div class="chart-info-text">
+                                <div class="text-group">
+                                    <dl>
+                                        <dt>단위:</dt>
+                                        <dd>%</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>통계출처:</dt>
+                                        <dd>한국장애인고용공단 장애인경제활동실태조사(2024년 5월)</dd>
+                                    </dl>
+                                </div>
+                                <p class="annotation-text">
+                                    주석 : 1) 가능과 제한적으로 가능하다고 응답한 경우만 제시함 <br />
+                                    2) 항목별 모름/응답거절을 표시하지 않았으며, 따라서 항목별 합과 전체가 일치하지 않음
+                                </p>
+                            </div>
+                            <button type="button" class="btn-info-close" title="내용 닫기"></button>
+                        </div>
+                        <div class="chart-area">
+                            <canvas id="chart_405"></canvas>
+                        </div>
+                    </li>
+                    <li class="chart-card-item">
+                        <div class="title-group">
+                            <h3 class="chart-title">등록장애인 장애유형 분포</h3>
+                            <div class="btn-group">
+                                <a href="" class="btn--download" title="다운로드"></a>
+                                <button type="button" class="btn--info" title="상세내용보기"></button>
+                                <button type="button" class="btn--data modal-open-btn" title="통계표보기"></button>
+                            </div>
+                        </div>
+                        <div class="chart-info">
+                            <div class="chart-info-text">
+                                <div class="text-group">
+                                    <dl>
+                                        <dt>단위:</dt>
+                                        <dd>%</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>통계출처:</dt>
+                                        <dd>한국장애인고용공단 발달장애인 일과 삶 실태조사(2023년)</dd>
+                                    </dl>
+                                </div>
+                                <p class="annotation-text">
+                                    주석 : 1) 유형별 도전적 행동 발생 정도는 자주 한다고 응답한 경우만 제시함 <br />2) 항목별 모름/응답거절을 표시하지 않았으며, 따라서 항목별 합과 전체가 일치하지 않음
+                                </p>
+                            </div>
+                            <button type="button" class="btn-info-close" title="내용 닫기"></button>
+                        </div>
+                        <div class="chart-area">
+                            <canvas id="chart_406"></canvas>
+                        </div>
+                    </li>
+                    <li class="chart-card-item">
+                        <div class="title-group">
+                            <h3 class="chart-title">등록장애인 장애정도 분포</h3>
+                            <div class="btn-group">
+                                <a href="" class="btn--download" title="다운로드"></a>
+                                <button type="button" class="btn--info" title="상세내용보기"></button>
+                                <button type="button" class="btn--data modal-open-btn" title="통계표보기"></button>
+                            </div>
+                        </div>
+                        <div class="chart-info">
+                            <div class="chart-info-text">
+                                <div class="text-group">
+                                    <dl>
+                                        <dt>단위:</dt>
+                                        <dd>%</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>통계출처:</dt>
+                                        <dd>
+                                            한국장애인고용공단 발달장애인 일과 삶 실태조사(2023년) <br />
+                                            한국장애인고용공단 장애인경제활동실태조사(2023년 5월)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <p class="annotation-text">주석 : 1) 재학/수료/수료 등의 경우에는 해당학교를 졸업하지 않은 것으로 판별 <br />2) 대학교 이상 졸업에는 4년제 미만 대학(교) 포함</p>
+                            </div>
+                            <button type="button" class="btn-info-close" title="내용 닫기"></button>
+                        </div>
+                        <div class="chart-area">
+                            <canvas id="chart_407"></canvas>
+                        </div>
+                    </li>
+                    <li class="chart-card-item">
+                        <div class="title-group">
+                            <h3 class="chart-title">연령별 지체, 청각, 발달장애 비중 변화</h3>
+                            <div class="btn-group">
+                                <a href="" class="btn--download" title="다운로드"></a>
+                                <button type="button" class="btn--info" title="상세내용보기"></button>
+                                <button type="button" class="btn--data modal-open-btn" title="통계표보기"></button>
+                            </div>
+                        </div>
+                        <div class="chart-info">
+                            <div class="chart-info-text">
+                                <div class="text-group">
+                                    <dl>
+                                        <dt>단위:</dt>
+                                        <dd>%</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>통계출처:</dt>
+                                        <dd>한국장애인고용공단 발달장애인 일과 삶 실태조사(2023년)</dd>
+                                    </dl>
+                                </div>
+                                <p class="annotation-text">주석 : 기타는 제외함</p>
+                            </div>
+                            <button type="button" class="btn-info-close" title="내용 닫기"></button>
+                        </div>
+                        <div class="chart-area">
+                            <canvas id="chart_408"></canvas>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 차트별 테이블 팝업 -->
+            <div id="chartTable1" class="modal">
+                <div class="modal-box">
+                    <button type="button" class="modal-close-btn" onclick="closeModal('chartTable1')">
+                        <span class="icon ic-close"></span>
+                        <span class="skip">닫기버튼</span>
+                    </button>
+                    <div id="div_title" class="modal-head">최근 5개년 장애인 고용률</div>
+                    <div class="modal-body">
+                        <div id="div_tableContainer" class="table-scroll">
+                            <table class="table center">
+                                <!-- pc-only 클래스 : 모바일에서 사라짐 -->
+                                <colgroup class="pc-only">
+                                    <col style="width: 25%" />
+                                    <col style="width: 10%" />
+                                    <col style="width: 8%" />
+                                </colgroup>
+                                <caption>
+                                    자기소개서 리스트
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th>자기소개서 제목</th>
+                                        <th>작성일</th>
+                                        <th>선택</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">2023-09-15</td>
+                                        <td class="">2023-09-15</td>
+                                        <td class="">wer</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- quick menu -->
+            <div class="quick-menu">
+                <h3 class="quick-menu-title">
+                    QUICK <br />
+                    MENU
+                </h3>
+                <ul>
+                    <li>
+                        <a href="../menu1/sub-1.html">
+                            <img src="../images/icon-quick-01.svg" alt="" />
+                            <span class="text"
+                                >노동시장 <br />
+                                통계</span
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../menu2/intro1.html">
+                            <img src="../images/icon-quick-02.svg" alt="" />
+                            <span class="text">조사 소개</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../menu3/guide1.html">
+                            <img src="../images/icon-quick-03.svg" alt="" />
+                            <span class="text"
+                                >데이터 및 <br />
+                                보고서</span
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="wrap">
+                <div class="footer-top">
+                    <img src="/images/logo-s.svg" alt="kead" />
+                    <ul>
+                        <li><a href="https://www.kead.or.kr/directions/directionsPage.do?branchId=101&menuId=MENU0819" title="새 창 열림" target="_blank">찾아오시는길</a></li>
+                        <li><a href="https://www.kead.or.kr/common/copyProtectionPolicy.do?menuId=MENU1424" title="새 창 열림" target="_blank">저작권보호정책</a></li>
+                        <li><a href="https://www.kead.or.kr/bbs/relatedsite/bbsPage.do?menuId=MENU1418" title="새 창 열림" target="_blank">관련사이트</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>(13619) 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>
+                    <p>대표번호 1588-1519 (유료) 평일 09:00~1800 (휴게시간 : 12:00~13:00)</p>
+                    <p class="copyright">Copyright (c) 2011 한국장애인고용공단 고용개발원 All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const charts = {};
+            document.addEventListener('DOMContentLoaded', () => {
+                // 차트 이미지로 저장하기
+                // const charts = {
+                //     'sample-chart1': new Chart(document.getElementById('sample-chart1'), chart_config1),
+                //     'sample-chart2': new Chart(document.getElementById('sample-chart2'), chart_config2),
+                //     'sample-chart3': new Chart(document.getElementById('sample-chart3'), chart_config3),
+                //     'sample-chart4': new Chart(document.getElementById('sample-chart4'), chart_config4),
+                //     'sample-chart5': new Chart(document.getElementById('sample-chart5'), chart_config5),
+                //     'sample-chart6': new Chart(document.getElementById('sample-chart6'), chart_config6),
+                //     'sample-chart8': new Chart(document.getElementById('sample-chart8'), chart_config8),
+                // };
+
+                //차트 생성하기
+                var elemets = document.querySelectorAll('canvas[id^="chart_"]');
+                elemets.forEach((e) => {
+                    var id = e.id;
+                    if (chartConfigs[id]) {
+                        charts[id] = new Chart(document.getElementById(id), chartConfigs[id]);
+                    }
+                });
+
+                // 차트 이미지로 저장하기 버튼 이벤트
+                const chartDownBtns = document.querySelectorAll('.btn--download');
+                chartDownBtns.forEach((chartDownBtn) => {
+                    chartDownBtn.addEventListener('click', () => {
+                        // 다운로드 버튼의 부모 요소에서 차트 ID를 찾음
+                        const chartBox = chartDownBtn.closest('.chart-card-item');
+                        const chartId = chartBox.querySelector('canvas').id;
+                        var chartTitle = chartBox.querySelector('.chart-title')?.textContent ?? chartId;
+                        console.log(chartId);
+
+                        // 차트 ID를 기반으로 해당 차트를 찾아 이미지로 변환
+                        const chart = charts[chartId];
+                        if (chart) {
+                            chartDownBtn.href = chart.toBase64Image();
+                            chartDownBtn.download = `${chartTitle}.png`;
+                        } else {
+                            console.error(`Chart with ID "${chartId}" not found.`);
+                        }
+                    });
+                });
+
+                // 차트별 데이터 팝업 보기
+                const showTableBtns = document.querySelectorAll('.btn--data');
+                showTableBtns.forEach((showTableBtn) => {
+                    showTableBtn.addEventListener('click', () => {
+                        // 다운로드 버튼의 부모 요소에서 차트 ID를 찾음
+                        const chartBox = showTableBtn.closest('.chart-card-item');
+                        const chartId = chartBox.querySelector('canvas').id;
+                        showTable(chartId);
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

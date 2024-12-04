@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>기업체의 장애인고용</title>
+        <link rel="stylesheet" href="../css/wvFont.css" />
+        <link rel="stylesheet" href="../css/wvCommon.css" />
+        <link rel="stylesheet" href="../css/wvUser.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <script defer src="../js/wvScript.js"></script>
+        <script defer src="../js/scrollTrigger.js"></script>
+    </head>
+    <body>
+        <!-- 스킵 메뉴 -->
+        <div class="skip-menu">
+            <a href="#headSkip">메뉴로 이동</a>
+            <a href="#contentSkip">본문 바로가기</a>
+        </div>
+
+        <header class="header">
+            <div class="flex-wrap">
+                <h1 class="header-logo">
+                    <a href="/main.html"><img src="/images/logo.svg" alt="한국장애인고용공단 고용개발원" /></a>
+                </h1>
+                <nav class="header-gnb" id="headSkip">
+                    <ul class="gnb-depth-1">
+                        <li class="depth-1">
+                            <a href="#" class="depth-1-link"><span>통계로 보는 장애인 노동시장</span></a>
+                            <ul class="gnb-depth-2">
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-1.html" class="depth-2-link"><span>장애인의 경제활동</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-2.html" class="depth-2-link"><span>기업체의 장애인고용</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-3.html" class="depth-2-link"><span>발달장애인의 일과 삶</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu1/sub-4.html" class="depth-2-link"><span>등록장애인 현황</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth-1">
+                            <a href="#" class="depth-1-link"><span>장애인고용 통계조사 소개</span></a>
+                            <ul class="gnb-depth-2">
+                                <li class="depth-2">
+                                    <a href="/menu2/intro1.html" class="depth-2-link"><span>장애인경제활동 실태조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro2.html" class="depth-2-link"><span>장애인고용패널조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro3.html" class="depth-2-link"><span>기업체장애인고용실태조사</span></a>
+                                </li>
+                                <li class="depth-2">
+                                    <a href="/menu2/intro4.html" class="depth-2-link"><span>발달장애인 일과 삶 실태조사</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth-1">
+                            <a href="/menu3/guide1.html" class="depth-1-link active"><span>통계자료 활용 안내</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 모바일 메뉴 -->
+                <div class="mobile-gnb">
+                    <button class="sidebar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="sidebar-wrap">
+                        <div class="sidebar">
+                            <ul class="gnb-depth-1">
+                                <li class="depth-1">
+                                    <a href="#" class="depth-1-link">통계로 보는 장애인 노동시장</a>
+                                    <ul class="gnb-depth-2">
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-1.html" class="depth-2-link"><span>장애인의 경제활동</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-2.html" class="depth-2-link"><span>기업체의 장애인고용</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-3.html" class="depth-2-link"><span>발달장애인의 일과 삶</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu1/sub-4.html" class="depth-2-link"><span>등록장애인 현황</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="depth-1">
+                                    <a href="#" class="depth-1-link">장애인고용 통계조사 소개</a>
+                                    <ul class="gnb-depth-2">
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro1.html" class="depth-2-link"><span>장애인경제활동 실태조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro2.html" class="depth-2-link"><span>장애인고용패널조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro3.html" class="depth-2-link"><span>기업체장애인고용실태조사</span></a>
+                                        </li>
+                                        <li class="depth-2">
+                                            <a href="/menu2/intro4.html" class="depth-2-link"><span>발달장애인 일과 삶 실태조사</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="depth-1">
+                                    <a href="/menu3/guide1.html" class="depth-1-link">통계자료 활용 안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- banner -->
+        <main id="contentSkip">
+            <div class="banner navy">
+                <div class="wrap-inner">
+                    <h2 class="banner-title">통계자료 활용 안내</h2>
+                    <div class="location-group">
+                        <ul class="location-list">
+                            <li class="location-item"><img src="../images/icon-home.svg" alt="" /><span class="skip">홈</span></li>
+                            <li class="location-item">통계자료 활용 안내</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="page-anchor">
+                    <a href="#content-anchor1" class="ani-up">데이터 · 보고서 공표 시기 안내</a>
+                    <a href="#content-anchor2" class="ani-up">장애인 통계집</a>
+                </div>
+
+                <div id="content-anchor1" class="">
+                    <div class="wrap-inner">
+                        <h3 class="content-title ani-up">데이터 · 보고서 공표 시기 안내</h3>
+
+                        <div class="cont__items ani-up">
+                            <div class="cont__item green">
+                                <h4>장애인경제활동 실태조사</h4>
+
+                                <div class="cont__content">
+                                    <strong>공표시기</strong>
+                                    <ul class="bullet-list">
+                                        <li>상반기 : 매년 12월</li>
+                                        <li>하반기 : 익년 5월</li>
+                                    </ul>
+                                </div>
+
+                                <div class="cont__content-btns">
+                                    <a href="https://edi.kead.or.kr/BoardType17.do?bid=35&mid=219" target="_blank" title="새 창 열림" class="btn--green"
+                                        ><span class="icon ic-chart"></span><strong>데이터 다운로드</strong> 바로가기</a
+                                    >
+                                    <a href="https://edi.kead.or.kr/BoardType01.do?bid=36&mid=220" target="_blank" title="새 창 열림" class="btn--line"
+                                        ><img src="/images/file.svg" alt="" /><strong>통계결과 보고서</strong> 바로가기</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="cont__item purple">
+                                <h4>장애인경제활동 실태조사</h4>
+
+                                <div class="cont__content">
+                                    <strong
+                                        >* 장애인고용패널조사는2023년에 2차 코호트를 종료하였으며, 2024년에는 3차 코호트 구축을 위한 예비조사를 실시하게 됨으로써 관련 조사결과 공표는 없을
+                                        예정입니다.</strong
+                                    >
+                                    <ul>
+                                        <li>(참고: 2025년 3차 코호트 1차조사 실시 후 2026년 상반기 중 3차 코호트 1차조사 결과 공표 예정)</li>
+                                    </ul>
+                                </div>
+
+                                <div class="cont__content-btns">
+                                    <a href="https://edi.kead.or.kr/BoardType17.do?bid=18&mid=37" target="_blank" title="새 창 열림" class="btn--purple"
+                                        ><span class="icon ic-chart"></span><strong>데이터 다운로드</strong> 바로가기</a
+                                    >
+                                    <a href="https://edi.kead.or.kr/BoardType01.do?bid=20&mid=38" target="_blank" title="새 창 열림" class="btn--line"
+                                        ><img src="/images/file.svg" alt="" /><strong>통계결과 보고서</strong> 바로가기</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="cont__item red">
+                                <h4>장애인경제활동 실태조사</h4>
+
+                                <div class="cont__content">
+                                    <strong>공표시기</strong>
+                                    <ul class="bullet-list">
+                                        <li>익년 1월</li>
+                                    </ul>
+                                </div>
+
+                                <div class="cont__content-btns">
+                                    <a href="https://edi.kead.or.kr/BoardType17.do?bid=19&mid=48" target="_blank" title="새 창 열림" class="btn--red"
+                                        ><span class="icon ic-chart"></span><strong>데이터 다운로드</strong> 바로가기</a
+                                    >
+                                    <a href="https://edi.kead.or.kr/BoardType01.do?bid=21&mid=49" target="_blank" title="새 창 열림" class="btn--line"
+                                        ><img src="/images/file.svg" alt="" /><strong>통계결과 보고서</strong> 바로가기</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="cont__item yellow">
+                                <h4>장애인경제활동 실태조사</h4>
+
+                                <div class="cont__content">
+                                    <strong>공표시기</strong>
+                                    <ul class="bullet-list">
+                                        <li>익년 5월</li>
+                                    </ul>
+                                </div>
+
+                                <div class="cont__content-btns">
+                                    <a href="https://edi.kead.or.kr/BoardType17.do?bid=40&mid=231" target="_blank" title="새 창 열림" class="btn--yellow"
+                                        ><span class="icon ic-chart"></span><strong>데이터 다운로드</strong> 바로가기</a
+                                    >
+                                    <a href="https://edi.kead.or.kr/BoardType01.do?bid=41&mid=232" target="_blank" title="새 창 열림" class="btn--line"
+                                        ><img src="/images/file.svg" alt="" /><strong>통계결과 보고서</strong> 바로가기</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-anchor2" class="">
+                    <div class="wrap-inner">
+                        <div class="cont-wrap ani-up">
+                            <div>
+                                <h3 class="content-title color--navy">장애인 통계집</h3>
+                                <p class="color--gray">맞춤형 통계서비스 제공을 통한 통계정보 개방, 공유를 위해 매년 장애인 통계집을 발간하고 있습니다.</p>
+                            </div>
+                            <div class="cont__content-btns">
+                                <a href="https://edi.kead.or.kr/BoardType01.do?bid=1&mid=21" target="_blank" title="새 창 열림" class="btn--navy"><strong>장애인 통계집</strong> 바로가기</a>
+                            </div>
+                        </div>
+                        <div class="book-wrap ani-up">
+                            <img src="/images/guide-book1.png" alt="" />
+                            <img src="/images/guide-book2.png" alt="" />
+                        </div>
+                        <div class="guide-svg ani-up">
+                            <svg width="286" height="238" preserveAspectRatio="xMinYMin meet" viewBox="0 -5 286 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 521">
+                                    <g id="Group 520">
+                                        <path
+                                            id="Vector_2"
+                                            class="circle-3"
+                                            d="M202 32C195.392 32 190 26.8565 190 20.5C190 14.1435 195.367 9 202 9C208.633 9 214 14.1435 214 20.5C214 26.8565 208.608 32 202 32ZM202 11.4504C196.785 11.4504 192.532 15.5264 192.532 20.5243C192.532 25.5222 196.785 29.5981 202 29.5981C207.215 29.5981 211.468 25.5222 211.468 20.5243C211.468 15.5264 207.215 11.4504 202 11.4504Z"
+                                            fill="#FF7348"
+                                        />
+                                        <path
+                                            id="Vector_3"
+                                            class="circle-2"
+                                            d="M90 5C90 7.76204 87.7652 10 84.9929 10C82.2206 10 80 7.76204 80 5C80 2.23796 82.2348 0 84.9929 0C87.7511 0 90 2.23796 90 5Z"
+                                            fill="#9FD8FF"
+                                        />
+                                        <g id="dlffjtmxm" clip-path="url(#clip0_653_2162)">
+                                            <path
+                                                id="Vector_4"
+                                                class="circle-1"
+                                                d="M64.2946 90.1488C64.2946 125.026 92.5098 153.286 127.305 153.286C162.1 153.286 190.327 125.014 190.327 90.1488C190.327 55.2834 162.123 27 127.316 27C92.5098 27 64.2946 55.272 64.2946 90.1488Z"
+                                                fill="#9FD8FF"
+                                            />
+                                            <path
+                                                id="Vector_5"
+                                                d="M154.783 85.2951C154.783 85.2951 144.493 69.1072 160.013 57.5347C160.013 57.5347 169.123 49.9864 188.931 53.0671C188.931 53.0671 207.231 53.158 212.813 70.2213C212.813 70.2213 227.38 98.7093 198.37 115.454L174.364 118.399L154.783 85.2951Z"
+                                                fill="#141316"
+                                            />
+                                            <path
+                                                id="Vector_6"
+                                                d="M198.371 115.453L197.157 141.099L161.919 138.2L163.609 117.511L158.073 117.056C149.893 116.385 150.007 105.87 150.007 105.87L149.7 98.8104L146.717 96.7528C144.606 94.2177 146.649 92.5694 146.649 92.5694C151.516 90.6709 152.707 84.4527 152.707 84.4527L154.057 76.6088C155.611 68.0715 159.945 68.4239 159.945 68.4239C159.945 68.4239 155.986 79.5645 176.588 93.0696C176.588 93.0696 177.144 91.1711 178.006 90.023C178.732 88.9658 181.875 86.8627 181.875 86.8627C181.875 86.8627 187.888 84.9529 190.236 90.2162C190.236 90.2162 194.967 99.4356 181.501 104.54C188.535 111.008 195.705 116.374 198.371 115.43V115.453Z"
+                                                fill="#FCAA9A"
+                                            />
+                                            <path
+                                                id="Vector_7"
+                                                d="M186.209 97.5502C186.084 97.5502 185.97 97.5161 185.868 97.4479C185.585 97.266 185.516 96.8908 185.698 96.6067C187.536 93.867 185.653 92.1391 185.573 92.0595C183.849 90.2861 181.307 91.7298 181.194 91.798C180.899 91.9572 180.536 91.8662 180.366 91.582C180.207 91.2978 180.298 90.9341 180.581 90.7522C181.773 90.0587 184.518 89.2516 186.401 91.1842C186.401 91.1842 189.124 93.6283 186.708 97.266C186.583 97.4365 186.401 97.5275 186.209 97.5388V97.5502Z"
+                                                fill="#141316"
+                                            />
+                                            <path id="Vector_8" d="M163.598 117.603L170.042 117.455L163.167 122.9L163.598 117.603Z" fill="black" />
+                                            <path
+                                                id="Vector_9"
+                                                d="M156.303 83.5669C156.303 83.5669 158.493 83.6579 160.444 84.8856C160.444 84.8856 161.522 85.6359 161.159 86.3521C161.159 86.3521 161.136 86.7272 159.911 86.4999C159.911 86.4999 157.426 85.3631 155.327 85.2949C155.327 85.2949 154.148 85.3517 154.284 84.3854C154.284 84.3854 154.295 83.476 156.303 83.5669Z"
+                                                fill="#141316"
+                                            />
+                                            <path
+                                                id="Vector_10"
+                                                d="M155.112 90.1492C155.112 90.9335 155.747 91.5701 156.541 91.5701C157.324 91.5701 157.959 90.9335 157.959 90.1378C157.959 89.3534 157.324 88.7168 156.541 88.7168C155.758 88.7168 155.123 89.3534 155.123 90.1378L155.112 90.1492Z"
+                                                fill="#141316"
+                                            />
+                                            <path
+                                                id="Vector_11"
+                                                d="M162.237 133.097C162.237 133.097 159.729 138.61 141.101 143.692C141.101 143.692 124.809 150.274 119.885 174.124C119.885 174.124 108.382 218.095 104.706 237.443H254.245C254.245 237.443 256.151 188.186 253.043 170.622C253.043 170.622 253.338 143.044 228.231 135.961L205.677 128.572L162.225 133.108L162.237 133.097Z"
+                                                fill="#FCD868"
+                                            />
+                                            <path
+                                                id="Vector_12"
+                                                d="M150.585 236.704C150.585 236.704 150.506 236.704 150.46 236.693C150.154 236.624 149.961 236.317 150.029 236.022L158.073 199.065C158.141 198.758 158.436 198.565 158.742 198.633C159.049 198.701 159.242 199.008 159.173 199.304L151.13 236.261C151.073 236.522 150.835 236.704 150.574 236.704H150.585Z"
+                                                fill="#141316"
+                                            />
+                                            <path
+                                                id="Vector_13"
+                                                d="M153.943 104.303C152.956 104.303 152.071 103.996 151.504 103.677C151.232 103.518 151.141 103.177 151.289 102.904C151.436 102.632 151.788 102.541 152.06 102.688C152.173 102.757 154.851 104.212 156.723 101.665C156.904 101.415 157.267 101.358 157.517 101.54C157.767 101.722 157.823 102.086 157.642 102.336C156.541 103.825 155.169 104.291 153.943 104.291V104.303Z"
+                                                fill="#141316"
+                                            />
+                                            <!-- <path
+                                                id="Vector_14"
+                                                d="M106.963 228.894C106.963 228.894 106.884 228.894 106.838 228.883C106.532 228.814 106.339 228.507 106.407 228.2L112.59 200.508C112.658 200.201 112.965 200.008 113.271 200.076C113.577 200.144 113.77 200.451 113.702 200.758L107.519 228.451C107.462 228.712 107.224 228.894 106.963 228.894Z"
+                                                fill="#141316"
+                                            /> -->
+                                            <path
+                                                id="Vector_15"
+                                                d="M214.447 74.3359C215.729 80.2132 216.84 83.5667 219.586 87.9547C222.797 93.0703 223.194 94.4003 227.607 98.3109C232.701 102.835 240.086 101.835 246.077 104.347C252.067 106.871 259.759 109.645 261.858 119.774C262.584 123.286 262.153 127.004 261.585 130.209C260.95 133.847 261.744 136.587 263.707 139.633C267.825 146.045 275.563 146.636 280.827 151.831C293.238 164.108 281.303 189.402 266.089 193.165C257.773 195.222 250.24 193.892 244.579 186.867C239.78 180.91 237.636 174.26 229.15 172.691C220.346 171.066 213.097 168.974 208.411 160.516C204.849 154.071 207.231 147.204 206.119 140.486C204.724 131.971 198.303 131.289 191.416 128.39C182.034 124.423 182.51 113.339 182.828 104.404C182.828 104.404 189.238 104.677 192.051 96.1396L214.424 74.3359H214.447Z"
+                                                fill="#141316"
+                                            />
+                                            <path
+                                                id="Vector_16"
+                                                d="M174.013 106.86C173.888 106.86 173.775 106.826 173.672 106.746C173.423 106.564 173.366 106.2 173.559 105.95C180.048 97.1969 175.919 89.9669 175.737 89.66C175.578 89.3872 175.669 89.0461 175.93 88.8756C176.202 88.7165 176.543 88.8074 176.713 89.0689C176.758 89.1484 181.421 97.231 174.467 106.621C174.353 106.769 174.183 106.848 174.013 106.848V106.86Z"
+                                                fill="#141316"
+                                            />
+                                            <path
+                                                id="Vector_17"
+                                                d="M238.612 238C238.294 238 238.044 237.75 238.044 237.432V192.244C238.044 191.926 238.294 191.676 238.612 191.676C238.929 191.676 239.179 191.926 239.179 192.244V237.432C239.179 237.75 238.929 238 238.612 238Z"
+                                                fill="#141316"
+                                            />
+                                            <g id="Group 522" class="arm">
+                                                <path id="Vector_18" d="M64.1638 110.381L60.6065 122.414L68.3951 124.726L71.9524 112.692L64.1638 110.381Z" fill="#141316" />
+                                                <path id="Vector_19" d="M60.5971 122.418L52.6885 149.154L60.4766 151.467L68.3853 124.732L60.5971 122.418Z" fill="#8176FF" />
+                                                <g id="Group">
+                                                    <g id="Group_2">
+                                                        <path
+                                                            id="Vector_20"
+                                                            d="M63.2166 142.204C63.2166 142.204 59.4614 137.418 58.9735 135.974C57.9298 133.734 57.1583 131.995 57.1583 131.995C57.1583 131.995 54.1405 130.586 50.408 134.723C50.408 134.723 45.7679 136.36 44.8376 140.544C44.8376 140.544 40.7193 144.42 41.8992 147.774C41.8992 147.774 40.447 150.65 40.4811 153.526C40.4811 153.526 44.2136 165.155 56.9428 171.283L66.9037 189.119L85.816 173.306L78.0559 159.187C78.0559 159.187 77.6929 143.465 65.1226 135.826C65.1226 135.826 64.0448 139.475 63.2393 142.204H63.2166Z"
+                                                            fill="#FCAA9A"
+                                                        />
+                                                        <path
+                                                            id="Vector_21"
+                                                            d="M66.9039 189.698C66.9039 189.698 66.8358 189.698 66.8018 189.698C66.6316 189.664 66.4954 189.562 66.4047 189.414L56.5345 171.737C43.862 165.553 39.9707 153.832 39.9366 153.719C39.9139 153.662 39.9139 153.605 39.9139 153.548C39.8912 150.99 40.9463 148.478 41.2867 147.751C40.345 144.465 43.6124 140.975 44.3272 140.27C45.3028 136.314 49.2736 134.575 50.0905 134.257C53.9932 130.005 57.2492 131.426 57.408 131.506C57.5328 131.563 57.6349 131.665 57.6803 131.79C57.6803 131.79 58.4518 133.518 59.4955 135.757C59.8245 136.712 61.7532 139.361 62.9898 140.998L64.5554 135.689C64.6008 135.519 64.7256 135.382 64.8958 135.325C65.066 135.269 65.2475 135.28 65.395 135.371C77.4434 142.68 78.5212 157.436 78.6006 159.062L86.3039 173.067C86.4401 173.306 86.3833 173.601 86.1678 173.772L67.2556 189.585C67.1535 189.675 67.0173 189.721 66.8925 189.721L66.9039 189.698ZM41.0371 153.435C41.4001 154.458 45.3709 165.087 57.1811 170.782C57.2832 170.827 57.374 170.918 57.4307 171.021L67.0627 188.266L85.09 173.192L77.5569 159.482C77.5115 159.403 77.4888 159.312 77.4888 159.221C77.4888 159.073 76.9896 144.238 65.4517 136.724L63.784 142.385C63.7272 142.59 63.5571 142.737 63.3529 142.783C63.1373 142.817 62.9331 142.737 62.7969 142.578C62.4112 142.078 58.9623 137.667 58.4631 136.178C57.6576 134.45 56.9996 133.006 56.7614 132.472C56.5798 132.415 56.2622 132.358 55.8424 132.358C54.7079 132.358 52.9154 132.836 50.8506 135.121C50.7825 135.189 50.7031 135.246 50.6237 135.28C50.5783 135.291 46.2672 136.871 45.4163 140.68C45.3936 140.793 45.3369 140.896 45.2461 140.975C45.2121 141.009 41.4115 144.636 42.4552 147.603C42.5006 147.751 42.5006 147.91 42.4212 148.046C42.4099 148.069 41.0598 150.774 41.0598 153.446L41.0371 153.435Z"
+                                                            fill="#141316"
+                                                        />
+                                                    </g>
+                                                    <g id="Group_3">
+                                                        <path id="Vector_22" d="M50.4082 134.723C50.4082 134.723 52.6886 140.543 57.0678 145.545L50.4082 134.723Z" fill="#FCAA9A" />
+                                                        <path
+                                                            id="Vector_23"
+                                                            d="M57.0676 146.114C56.9088 146.114 56.7499 146.046 56.6365 145.921C52.2459 140.908 49.9769 135.178 49.8748 134.939C49.7614 134.644 49.9089 134.314 50.1925 134.201C50.4874 134.087 50.8165 134.235 50.9299 134.519C50.9526 134.576 53.233 140.305 57.4874 145.171C57.6916 145.409 57.6689 145.762 57.442 145.978C57.3285 146.069 57.2037 146.114 57.0676 146.114Z"
+                                                            fill="#141316"
+                                                        />
+                                                    </g>
+                                                    <g id="Group_4">
+                                                        <path id="Vector_24" d="M44.8377 140.543C44.8377 140.543 47.9917 146.284 51.815 150.547L44.8377 140.543Z" fill="#FCAA9A" />
+                                                        <path
+                                                            id="Vector_25"
+                                                            d="M51.815 151.115C51.6561 151.115 51.5087 151.047 51.3952 150.922C47.5719 146.659 44.3726 140.873 44.3386 140.816C44.1911 140.543 44.2932 140.19 44.5655 140.043C44.8378 139.895 45.1894 139.986 45.3369 140.27C45.371 140.327 48.5022 145.999 52.2461 150.171C52.4616 150.41 52.4389 150.763 52.2007 150.979C52.0873 151.081 51.9625 151.126 51.8263 151.126L51.815 151.115Z"
+                                                            fill="#141316"
+                                                        />
+                                                    </g>
+                                                    <g id="Group_5">
+                                                        <path id="Vector_26" d="M41.7974 147.443C41.7974 147.443 44.2366 152.388 47.6401 154.81L41.7974 147.443Z" fill="#FCAA9A" />
+                                                        <path
+                                                            id="Vector_27"
+                                                            d="M47.6402 155.379C47.5267 155.379 47.4133 155.345 47.3111 155.277C43.8282 152.81 41.389 147.91 41.2869 147.694C41.1508 147.41 41.2642 147.069 41.5478 146.933C41.8315 146.796 42.1718 146.91 42.308 147.194C42.3307 147.239 44.7245 152.048 47.9692 154.344C48.2188 154.526 48.2868 154.879 48.1053 155.14C47.9918 155.299 47.8217 155.379 47.6402 155.379Z"
+                                                            fill="#141316"
+                                                        />
+                                                    </g>
+                                                </g>
+                                                <path id="Vector_28" d="M122.744 217.65L85.9977 164.301L56.0127 183.001L86.8486 237.431H124.605L122.744 217.65Z" fill="#FCD868" />
+                                                <path
+                                                    id="Vector_29"
+                                                    d="M121.213 87.4767C113.68 110.451 88.993 122.956 66.0646 115.408C43.1476 107.859 30.668 83.1227 38.1898 60.1482C45.7116 37.1736 70.4098 24.6689 93.3382 32.2172C116.267 39.7655 128.746 64.5021 121.213 87.4767Z"
+                                                    fill="#141316"
+                                                />
+                                                <path
+                                                    id="Vector_30"
+                                                    d="M113.351 84.8854C107.247 103.506 87.2343 113.635 68.6511 107.519C50.0792 101.403 39.9594 81.35 46.0631 62.7407C52.1667 44.12 72.1794 33.9798 90.7627 40.0958C109.346 46.2117 119.454 66.2647 113.351 84.8854Z"
+                                                    fill="#F3F6FF"
+                                                />
+                                                <path id="Vector_31" class="chart-bar1" d="M67.2557 76.0176H56.3984V84.5094H67.2557V76.0176Z" fill="#9FD8FF" />
+                                                <path id="Vector_32" class="chart-bar2" d="M84.3073 55.9199H73.4501V84.5102H84.3073V55.9199Z" fill="#61A7FF" />
+                                                <path id="Vector_33" class="chart-bar3" d="M102.187 66.6855H91.3299V84.5104H102.187V66.6855Z" fill="#FCD868" />
+                                            </g>
+                                            <g id="Group_6">
+                                                <path id="Vector_34" d="M63.2168 142.203C64.7257 144.318 66.1892 145.5 68.0725 147.057L63.2168 142.203Z" fill="#FCAA9A" />
+                                                <path
+                                                    id="Vector_35"
+                                                    d="M68.0838 147.625C67.959 147.625 67.8342 147.58 67.7207 147.5L67.5846 147.387C65.7353 145.863 64.2718 144.658 62.7629 142.533C62.5814 142.282 62.6381 141.919 62.8991 141.737C63.1486 141.555 63.5117 141.612 63.6932 141.873C65.1227 143.874 66.5295 145.033 68.3107 146.511L68.4468 146.625C68.685 146.83 68.7191 147.182 68.5262 147.421C68.4128 147.557 68.2539 147.625 68.0951 147.625H68.0838Z"
+                                                    fill="#141316"
+                                                />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_653_2162">
+                                        <rect width="250" height="211" fill="white" transform="translate(36 27)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- quick menu -->
+            <div class="quick-menu">
+                <h3 class="quick-menu-title">
+                    QUICK <br />
+                    MENU
+                </h3>
+                <ul>
+                    <li>
+                        <a href="../menu1/sub-1.html">
+                            <img src="../images/icon-quick-01.svg" alt="" />
+                            <span class="text"
+                                >노동시장 <br />
+                                통계</span
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../menu2/intro1.html">
+                            <img src="../images/icon-quick-02.svg" alt="" />
+                            <span class="text">조사 소개</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../menu3/guide1.html">
+                            <img src="../images/icon-quick-03.svg" alt="" />
+                            <span class="text"
+                                >데이터 및 <br />
+                                보고서</span
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div class="wrap">
+                <div class="footer-top">
+                    <img src="/images/logo-s.svg" alt="kead" />
+                    <ul>
+                        <li><a href="https://www.kead.or.kr/directions/directionsPage.do?branchId=101&menuId=MENU0819" title="새 창 열림" target="_blank">찾아오시는길</a></li>
+                        <li><a href="https://www.kead.or.kr/common/copyProtectionPolicy.do?menuId=MENU1424" title="새 창 열림" target="_blank">저작권보호정책</a></li>
+                        <li><a href="https://www.kead.or.kr/bbs/relatedsite/bbsPage.do?menuId=MENU1418" title="새 창 열림" target="_blank">관련사이트</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>(13619) 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>
+                    <p>대표번호 1588-1519 (유료) 평일 09:00~1800 (휴게시간 : 12:00~13:00)</p>
+                    <p class="copyright">Copyright (c) 2011 한국장애인고용공단 고용개발원 All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const anchor = document.querySelector('.page-anchor');
+                const anchorEls = document.querySelectorAll('.page-anchor a');
+                const headerH = document.querySelector('header').clientHeight;
+
+                anchorEls.forEach((anchorEl) => {
+                    anchorEl.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        anchorEls.forEach((el) => el.classList.remove('on'));
+                        e.target.classList.add('on');
+                        let urlTarget = e.target.getAttribute('href').replace('#', '');
+                        let targetEl = document.querySelector(`#${urlTarget}`);
+                        let targetElOffTop = targetEl.getBoundingClientRect().top;
+
+                        window.scrollTo({ top: targetElOffTop - headerH, behavior: 'smooth' });
+
+                        // 접근성
+                        const targetSkipEls = anchor.querySelectorAll('.skip');
+                        targetSkipEls.forEach((targetSkipEl) => targetSkipEl.remove());
+                        accessibilityText(anchorEl);
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
