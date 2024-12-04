@@ -630,7 +630,8 @@ main:has(.banner) {
     color: #00479d;
 }
 
-.quick-menu a:hover .text {
+.quick-menu a:hover .text,
+.quick-menu a:focus-visible .text {
     transform: translateX(0);
     opacity: 1;
 }
