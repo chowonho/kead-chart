@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "GmarketSansMedium";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Pretendard";
     font-style: normal;
     font-weight: 900;
@@ -66,11 +66,4 @@
     font-style: normal;
     font-weight: 100;
     src: url("font/pretendard/Pretendard-Thin.woff2") format("woff2"), url("font/pretendard/Pretendard-Thin.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Nanum Myeongjo";
-    font-style: normal;
-    font-weight: 500;
-    src: url("font/NanumMyeongjo.woff2") format("woff2"), url("font/NanumMyeongjo.woff") format("woff");
-}
+} */
