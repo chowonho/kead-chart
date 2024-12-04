@@ -1309,6 +1309,10 @@ em {
     .cont__item {
         flex: 1 1 45%;
     }
+
+    .wide-card-list {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1546,13 +1550,21 @@ em {
         padding: 2rem;
     }
 
+    .wide-card-list .chart-card-item {
+        height: auto;
+    }
+
+    .wide-card-list .chart-area {
+        height: 350px;
+    }
+
     .chart-area.chart-scroll {
         overflow: auto;
     }
 
     .chart-area.chart-scroll canvas {
-        height: 300px !important;
-        width: 400px !important;
+        height: 280px !important;
+        width: 420px !important;
     }
 
     .chart-card-item .chart-info {
