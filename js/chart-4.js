@@ -197,6 +197,11 @@ const chartConfigs = {
                 title: {
                     display: true,
                 },
+                tooltip: {
+                    enabled: true, // 툴팁 활성화 여부
+                    mode: 'index', // 데이터 세트 인덱스별 툴팁 표시
+                    intersect: true, // 마우스가 데이터 포인트 위에 있을 때만 표시
+                },
             },
         },
     },
@@ -259,7 +264,7 @@ const chartConfigs = {
                         display: false,
                     },
                     ticks: {
-                        display: false,
+                        // display: false,
                     },
                 },
             },
