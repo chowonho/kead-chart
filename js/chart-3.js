@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
 Chart.register(ChartDataLabels);
 Chart.defaults.color = '#575757';
 Chart.defaults.font.family = 'Pretendard';
+Chart.defaults.layout.padding.top = 15;
 
-// 그래프 숫자 위치
 Chart.defaults.set('plugins.datalabels', {
     align: 'top',
     anchor: 'end',
@@ -57,17 +57,14 @@ const backgroundColorPlugin = {
 // 그래프 라인 제거
 const scalesFalse = {
     x: {
+        beginAtZero: true,
         grid: {
             display: false,
         },
     },
     y: {
-        grid: {
-            display: false,
-        },
-        ticks: {
-            display: false,
-        },
+        beginAtZero: true,
+        display: false,
     },
 };
 
@@ -105,7 +102,7 @@ const chartConfigs = {
                 },
             },
             maxBarThickness: 60,
-            // scales: scalesFalse,
+            scales: scalesFalse,
         },
     },
     chart_302: {
@@ -136,9 +133,17 @@ const chartConfigs = {
             scales: {
                 x: {
                     stacked: true,
+                    beginAtZero: true,
                 },
                 y: {
                     stacked: true,
+                    grid: {
+                        color: '#fff',
+                    },
+                    ticks: {
+                        display: false,
+                    },
+                    beginAtZero: true,
                 },
             },
         },
@@ -173,9 +178,7 @@ const chartConfigs = {
                     },
                 },
                 y: {
-                    grid: {
-                        display: false,
-                    },
+                    display: false,
                     ticks: {
                         display: false,
                     },
@@ -267,22 +270,16 @@ const chartConfigs = {
             },
             scales: {
                 x: {
-                    grid: {
-                        display: false,
-                    },
-                    ticks: {
-                        font: {
-                            size: 11,
-                        },
-                    },
+                    beginAtZero: true,
                 },
                 y: {
                     grid: {
-                        display: false,
+                        color: '#fff',
                     },
                     ticks: {
                         display: false,
                     },
+                    beginAtZero: true,
                 },
             },
             maxBarThickness: 20,
@@ -431,14 +428,34 @@ const chartConfigs = {
                     },
                 },
             },
-            maxBarThickness: 20,
+            maxBarThickness: 40,
             scales: scalesFalse,
         },
     },
     chart_315: {
         type: 'bar',
         data: chartDataSet.chart_315,
-        plugins: [backgroundColorPlugin],
+        plugins: [
+            backgroundColorPlugin,
+            {
+                id: 'customTitles',
+                beforeDraw: (chart) => {
+                    const { ctx, chartArea } = chart;
+                    ctx.save();
+                    ctx.font = '12px Pretendard';
+                    ctx.textAlign = 'center';
+                    ctx.fillStyle = '#575757';
+
+                    // First title
+                    ctx.fillText('취업 희망 여부', chartArea.left + chartArea.width / 4, chartArea.bottom + 40);
+
+                    // Second title
+                    ctx.fillText('당장 내일부터 일할 의향', chartArea.left + (3 * chartArea.width) / 4, chartArea.bottom + 40);
+
+                    ctx.restore();
+                },
+            },
+        ],
         options: {
             responsive: true,
             maintainAspectRatio: false,
@@ -452,8 +469,13 @@ const chartConfigs = {
                     },
                 },
             },
-            maxBarThickness: 20,
+            maxBarThickness: 40,
             scales: scalesFalse,
+            layout: {
+                padding: {
+                    bottom: 20,
+                },
+            },
         },
     },
     chart_316: {
@@ -473,7 +495,7 @@ const chartConfigs = {
                     },
                 },
             },
-            maxBarThickness: 20,
+            maxBarThickness: 40,
             scales: scalesFalse,
         },
     },

@@ -12,7 +12,7 @@
 .main-title {
     position: relative;
     display: inline-block;
-    margin-top: 20rem;      
+    margin-top: 20rem;
     color: #fff;
     font-family: 'GmarketSansMedium';
     /* opacity: 0; */
@@ -383,7 +383,7 @@ main:has(.banner) {
 
 .chart-card-item {
     position: relative;
-    height: 356px;
+    height: 390px;
     padding: 18px 19px;
     border: 1px solid #e2e2e2;
     background: #fff;
@@ -391,7 +391,7 @@ main:has(.banner) {
 }
 
 .wide-card-list .chart-card-item {
-    height: 420px;
+    height: 440px;
 }
 
 .chart-card-item:hover {
@@ -446,7 +446,7 @@ main:has(.banner) {
 .chart-card-item .chart-info {
     position: relative;
     font-size: 12px;
-    height: 50px;
+    height: 70px;
     overflow: hidden;
 }
 .chart-card-item .chart-info.show {
@@ -455,13 +455,13 @@ main:has(.banner) {
     bottom: 15px;
     top: 60px;
     right: 15px;
-    height: 280px;
+    height: 292px;
     padding: 15px 34px 15px 17px;
     background: #deedff;
 }
 
 .wide-card-list .chart-card-item .chart-info.show {
-    height: 340px;
+    height: 360px;
 }
 
 .chart-card-item .chart-info-text {
@@ -477,6 +477,7 @@ main:has(.banner) {
     flex-shrink: 0;
 }
 .chart-card-item .chart-info-text dd {
+    flex-grow: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
