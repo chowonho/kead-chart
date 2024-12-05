@@ -538,7 +538,7 @@ const chartConfigs = {
                     const position1 = left + width / 6; // Left section
                     const position2 = left + width / 2; // Center section
                     const position3 = left + (5 * width) / 6; // Right section
-                    const verticalPosition = bottom + 80; // Space below the chart
+                    const verticalPosition = bottom + 70; // Space below the chart
 
                     // First title with line break
                     const title1 = ['1년 내'];
