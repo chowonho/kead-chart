@@ -144,7 +144,7 @@ const chartConfigs = {
                 },
                 y: {
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                     ticks: {
                         display: false,

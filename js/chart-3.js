@@ -157,7 +157,7 @@ const chartConfigs = {
                 y: {
                     stacked: true,
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                     ticks: {
                         display: false,
@@ -298,7 +298,7 @@ const chartConfigs = {
                 },
                 y: {
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                     ticks: {
                         display: false,

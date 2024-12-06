@@ -101,7 +101,7 @@ const chartConfigs = {
                 x: {
                     beginAtZero: true,
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                 },
                 y: {
@@ -134,7 +134,7 @@ const chartConfigs = {
                 x: {
                     beginAtZero: true,
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                     ticks: {
                         stepSize: 5,
@@ -170,7 +170,7 @@ const chartConfigs = {
                 x: {
                     beginAtZero: true,
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                 },
                 y: {
@@ -203,7 +203,7 @@ const chartConfigs = {
                 x: {
                     beginAtZero: true,
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                 },
                 y: {
@@ -247,7 +247,7 @@ const chartConfigs = {
                 },
                 y: {
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                     ticks: {
                         display: false,
@@ -336,7 +336,7 @@ const chartConfigs = {
                 },
                 y: {
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                     ticks: {
                         display: false,
@@ -505,7 +505,7 @@ const chartConfigs = {
                 },
                 y: {
                     grid: {
-                        color: '#fff',
+                        color: 'transparent',
                     },
                     ticks: {
                         display: false,
