@@ -40,6 +40,19 @@ Chart.defaults.set('plugins.datalabels', {
     padding: {
         bottom: -10,
     },
+    formatter: function (value) {
+        return value?.toFixed(1);
+    },
+});
+
+const clearTooltip = (tooltipItems) => {
+    return tooltipItems[0].label.replaceAll(',', '');
+};
+
+Chart.defaults.set('plugins.tooltip', {
+    callbacks: {
+        title: clearTooltip,
+    },
 });
 
 // 플러그인 정의
@@ -68,10 +81,6 @@ const scalesFalse = {
     },
 };
 
-const clearTooltip = (tooltipItems) => {
-    return tooltipItems[0].label.replaceAll(',', '');
-};
-
 const chartConfigs = {
     chart_301: {
         type: 'bar',
@@ -89,6 +98,11 @@ const chartConfigs = {
                         },
                         boxWidth: 6,
                         boxHeight: 6,
+                    },
+                },
+                tooltip: {
+                    callbacks: {
+                        title: clearTooltip,
                     },
                 },
                 datalabels: {
@@ -119,6 +133,11 @@ const chartConfigs = {
                     labels: {
                         boxWidth: 6,
                         boxHeight: 6,
+                    },
+                },
+                tooltip: {
+                    callbacks: {
+                        title: clearTooltip,
                     },
                 },
                 datalabels: {
@@ -265,6 +284,11 @@ const chartConfigs = {
                         },
                         boxWidth: 6,
                         boxHeight: 6,
+                    },
+                },
+                tooltip: {
+                    callbacks: {
+                        title: clearTooltip,
                     },
                 },
             },

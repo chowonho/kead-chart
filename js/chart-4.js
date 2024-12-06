@@ -40,6 +40,19 @@ Chart.defaults.set('plugins.datalabels', {
     padding: {
         bottom: -10,
     },
+    formatter: function (value) {
+        return value.toFixed(1);
+    },
+});
+
+const clearTooltip = (tooltipItems) => {
+    return tooltipItems[0].label.replaceAll(',', '');
+};
+
+Chart.defaults.set('plugins.tooltip', {
+    callbacks: {
+        title: clearTooltip,
+    },
 });
 
 // 플러그인 정의
@@ -140,7 +153,9 @@ const chartConfigs = {
                 },
                 y1: {
                     position: 'right',
-                    beginAtZero: true,
+                    grid: {
+                        display: false, // 두 번째 y축의 그리드 숨기기
+                    },
                 },
             },
             elements: {
@@ -298,6 +313,9 @@ const chartConfigs = {
                     beginAtZero: true,
                 },
                 y1: {
+                    grid: {
+                        display: false, // 두 번째 y축의 그리드 숨기기
+                    },
                     position: 'right',
                     beginAtZero: true,
                 },

@@ -858,7 +858,7 @@ table caption {
     }
 
     .modal .modal-head {
-        padding: 2rem;
+        padding: 2rem 5rem 2rem 2rem;
     }
 
     .modal .modal-close-btn {

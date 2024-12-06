@@ -40,6 +40,19 @@ Chart.defaults.set('plugins.datalabels', {
     padding: {
         bottom: -10,
     },
+    formatter: function (value) {
+        return value.toFixed(1);
+    },
+});
+
+const clearTooltip = (tooltipItems) => {
+    return tooltipItems[0].label.replaceAll(',', '');
+};
+
+Chart.defaults.set('plugins.tooltip', {
+    callbacks: {
+        title: clearTooltip,
+    },
 });
 
 // 플러그인 정의

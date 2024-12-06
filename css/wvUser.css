@@ -435,11 +435,13 @@ main:has(.banner) {
     background-image: url('../images/icon-info-active.svg');
     background-size: 25px;
 }
-.chart-card-item .btn--data {
+.chart-card-item .btn--data,
+.chart-card-item .btn--data-out {
     background: url('../images/icon-table.svg') no-repeat center / 100%;
     background-size: 25px;
 }
-.chart-card-item .btn--data.active {
+.chart-card-item .btn--data.active,
+.chart-card-item .btn--data-out.active {
     background-image: url('../images/icon-table-active.svg');
     background-size: 25px;
 }
@@ -451,11 +453,11 @@ main:has(.banner) {
 }
 .chart-card-item .chart-info.show {
     position: absolute;
-    left: 15px;
-    bottom: 15px;
-    top: 60px;
-    right: 15px;
-    height: 292px;
+    left: 2rem;
+    bottom: 2rem;
+    top: 6rem;
+    right: 2rem;
+    height: calc(100% - 8rem);
     padding: 15px 34px 15px 17px;
     background: #deedff;
 }
