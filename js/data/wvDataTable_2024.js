@@ -4,6 +4,7 @@ const tableDataSet = {
         meta: {
             id: '101',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '최근 5개년 장애인 고용률',
             cols: [{ width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }],
             headers: [
@@ -13,13 +14,13 @@ const tableDataSet = {
                         colSpan: 2,
                     },
                     {
-                        title: '15세이상인구(명)',
+                        title: '15세이상인구',
                     },
                     {
-                        title: '취업자(명)',
+                        title: '취업자',
                     },
                     {
-                        title: '고용률(%)',
+                        title: '고용률',
                     },
                 ],
             ],
@@ -53,6 +54,8 @@ const tableDataSet = {
         meta: {
             id: '102',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
+            annotation: '(단위 : 명, %)',
             tableTitle: '최근 5개년 장애인 실업률',
             cols: [{ width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }],
             headers: [
@@ -61,13 +64,13 @@ const tableDataSet = {
                     colSpan: 2,
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '실업자(명)',
+                    title: '실업자',
                 },
                 {
-                    title: '실업률(%)',
+                    title: '실업률',
                 },
             ],
         },
@@ -100,6 +103,7 @@ const tableDataSet = {
         meta: {
             id: '103',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '최근 5개년 장애인 경제활동참가율',
             cols: [{ width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }],
             headers: [
@@ -108,13 +112,13 @@ const tableDataSet = {
                     colSpan: 2,
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '실업자(명)',
+                    title: '경제활동인구',
                 },
                 {
-                    title: '경제활동참가율(%)',
+                    title: '경제활동참가율',
                 },
             ],
         },
@@ -147,6 +151,7 @@ const tableDataSet = {
         meta: {
             id: '104',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '최근 5개년 장애인 비경제활동인구 비율',
             cols: [{ width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }],
             headers: [
@@ -155,13 +160,13 @@ const tableDataSet = {
                     colSpan: 2,
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '경제활동인구(명)',
+                    title: '비경제활동인구',
                 },
                 {
-                    title: '경제활동참가율(%)',
+                    title: '비경제활동인구 비율',
                 },
             ],
         },
@@ -194,6 +199,7 @@ const tableDataSet = {
         meta: {
             id: '105',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '성별 고용률',
             cols: [{ width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }],
             headers: [
@@ -202,13 +208,13 @@ const tableDataSet = {
                     colSpan: 2,
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '취업자(명)',
+                    title: '취업자',
                 },
                 {
-                    title: '고용률(%)',
+                    title: '고용률',
                 },
             ],
         },
@@ -237,6 +243,7 @@ const tableDataSet = {
         meta: {
             id: '106',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '연령별 고용률',
             cols: 4,
             headers: [
@@ -244,13 +251,13 @@ const tableDataSet = {
                     title: '구분',
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '취업자(명)',
+                    title: '취업자',
                 },
                 {
-                    title: '고용률(%)',
+                    title: '고용률',
                 },
             ],
         },
@@ -270,6 +277,7 @@ const tableDataSet = {
         meta: {
             id: '107',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애유형별 고용률',
             cols: 4,
             headers: [
@@ -277,13 +285,13 @@ const tableDataSet = {
                     title: '구분',
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '취업자(명)',
+                    title: '취업자',
                 },
                 {
-                    title: '고용률(%)',
+                    title: '고용률',
                 },
             ],
         },
@@ -303,6 +311,7 @@ const tableDataSet = {
         meta: {
             id: '108',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애정도별 고용률',
             cols: 4,
             headers: [
@@ -310,13 +319,13 @@ const tableDataSet = {
                     title: '구분',
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '취업자(명)',
+                    title: '취업자',
                 },
                 {
-                    title: '고용률(%)',
+                    title: '고용률',
                 },
             ],
         },
@@ -332,6 +341,7 @@ const tableDataSet = {
         meta: {
             id: '109',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '성별 경제활동참가율',
             cols: [{ width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }, { width: '33%' }],
             headers: [
@@ -340,13 +350,13 @@ const tableDataSet = {
                     colSpan: 2,
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '경제활동인구(명)',
+                    title: '경제활동인구',
                 },
                 {
-                    title: '경제활동참가율(%)',
+                    title: '경제활동참가율',
                 },
             ],
         },
@@ -375,6 +385,7 @@ const tableDataSet = {
         meta: {
             id: '110',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '연령별 경제활동참가율',
             cols: 4,
             headers: [
@@ -382,13 +393,13 @@ const tableDataSet = {
                     title: '구분',
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '경제활동인구(명)',
+                    title: '경제활동인구',
                 },
                 {
-                    title: '경제활동참가율(%)',
+                    title: '경제활동참가율',
                 },
             ],
         },
@@ -408,6 +419,7 @@ const tableDataSet = {
         meta: {
             id: '111',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애유형별 경제활동참가율',
             cols: 4,
             headers: [
@@ -415,13 +427,13 @@ const tableDataSet = {
                     title: '구분',
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '경제활동인구(명)',
+                    title: '경제활동인구',
                 },
                 {
-                    title: '경제활동참가율(%)',
+                    title: '경제활동참가율',
                 },
             ],
         },
@@ -441,6 +453,7 @@ const tableDataSet = {
         meta: {
             id: '112',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애정도별 경제활동참가율',
             cols: 4,
             headers: [
@@ -448,13 +461,13 @@ const tableDataSet = {
                     title: '구분',
                 },
                 {
-                    title: '15세이상인구(명)',
+                    title: '15세이상인구',
                 },
                 {
-                    title: '경제활동인구(명)',
+                    title: '경제활동인구',
                 },
                 {
-                    title: '경제활동참가율(%)',
+                    title: '경제활동참가율',
                 },
             ],
         },
@@ -469,6 +482,7 @@ const tableDataSet = {
         meta: {
             id: '113',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애인 취업자의 종사상지위',
             cols: [{ width: '20%' }, { width: '30%' }, { width: '25%' }, { width: '25%' }],
             headers: [
@@ -477,10 +491,10 @@ const tableDataSet = {
                     colSpan: 2,
                 },
                 {
-                    title: '인원(명)',
+                    title: '인원',
                 },
                 {
-                    title: '비율(%)',
+                    title: '비율',
                 },
             ],
         },
@@ -488,17 +502,17 @@ const tableDataSet = {
             {
                 a: { text: '임금근로자', class: 'ac' },
                 child: [
-                    { A: { text: '상용근로자', class: 'al' }, B: { text: '342,068' }, C: { text: '39.3' } },
-                    { A: { text: '임시근로자', class: 'al' }, B: { text: '221,398' }, C: { text: '25.4' } },
-                    { A: { text: '일용근로자', class: 'al' }, B: { text: '70,604' }, C: { text: '8.1' } },
+                    { A: { text: '상용근로자', class: 'ac' }, B: { text: '342,068' }, C: { text: '39.3' } },
+                    { A: { text: '임시근로자', class: 'ac' }, B: { text: '221,398' }, C: { text: '25.4' } },
+                    { A: { text: '일용근로자', class: 'ac' }, B: { text: '70,604' }, C: { text: '8.1' } },
                 ],
             },
             {
                 a: { text: '비임금근로자', class: 'ac' },
                 child: [
-                    { A: { text: '고용원이 있는 자영업자', class: 'al' }, B: { text: '43143' }, C: { text: '5.0' } },
-                    { A: { text: '고용원이 없는 자영업자', class: 'al' }, B: { text: '172563' }, C: { text: '19.8' } },
-                    { A: { text: '무급가족종사자', class: 'al' }, B: { text: '21564' }, C: { text: '2.5' } },
+                    { A: { text: '고용원이 있는 자영업자', class: 'ac' }, B: { text: '43,143' }, C: { text: '5.0' } },
+                    { A: { text: '고용원이 없는 자영업자', class: 'ac' }, B: { text: '172,563' }, C: { text: '19.8' } },
+                    { A: { text: '무급가족종사자', class: 'ac' }, B: { text: '21,564' }, C: { text: '2.5' } },
                 ],
             },
             {
@@ -513,27 +527,42 @@ const tableDataSet = {
         meta: {
             id: '114',
             tableInfo: { class: 'table' },
-            tableTitle: '장애인 취업자의 직장(일자리) 산업(상위 5개)',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '장애인 취업자의 직장(일자리) 산업',
             cols: [{ width: '40%' }, { width: '30%' }, { width: '30%' }],
             headers: [
                 {
                     title: '구분',
                 },
                 {
-                    title: '인원(명)',
+                    title: '인원',
                 },
                 {
-                    title: '비율(%)',
+                    title: '비율',
                 },
             ],
         },
         data: [
-            { A: { text: '보건업 및 사회복지서비스업', class: 'al' }, B: { text: '144,115' }, C: { text: '16.5' } },
-            { A: { text: '제조업', class: 'al' }, B: { text: '117,712' }, C: { text: '13.5' } },
-            { A: { text: '농업, 임업, 어업 및 광업', class: 'al' }, B: { text: '90,759' }, C: { text: '10.4' } },
-            { A: { text: '공공행정, 국방 및 사회보장 행정', class: 'al' }, B: { text: '75,708' }, C: { text: '8.7' } },
-            { A: { text: '건설업', class: 'al' }, B: { text: '72,904' }, C: { text: '8.4' } },
-            { A: { text: '전체', class: 'al' }, B: { text: '871,339' }, C: { text: '100' } },
+            { A: { text: '농업, 임업 및 어업', class: 'ac' }, B: { text: '90,759' }, C: { text: '10.4' } },
+            { A: { text: '제조업', class: 'ac' }, B: { text: '117,712' }, C: { text: '13.5' } },
+            { A: { text: '전기, 가스, 증기 및 공기 조절 공급업', class: 'ac' }, B: { text: '973' }, C: { text: '0.1' } },
+            { A: { text: '수도, 하수 및 폐기물 처리, 원료 재활용업', class: 'ac' }, B: { text: '7,392' }, C: { text: '0.8' } },
+            { A: { text: '건설업', class: 'ac' }, B: { text: '72,904' }, C: { text: '8.4' } },
+            { A: { text: '도매 및 소매업', class: 'ac' }, B: { text: '69,284' }, C: { text: '8.0' } },
+            { A: { text: '운수 및 창고업', class: 'ac' }, B: { text: '67,761' }, C: { text: '7.8' } },
+            { A: { text: '숙박 및 음식점업', class: 'ac' }, B: { text: '30,546' }, C: { text: '3.5' } },
+            { A: { text: '정보통신업', class: 'ac' }, B: { text: '15,299' }, C: { text: '1.8' } },
+            { A: { text: '금융 및 보험업', class: 'ac' }, B: { text: '10,829' }, C: { text: '1.2' } },
+            { A: { text: '부동산업', class: 'ac' }, B: { text: '12,326' }, C: { text: '1.4' } },
+            { A: { text: '전문, 과학 및 기술 서비스업', class: 'ac' }, B: { text: '14,591' }, C: { text: '1.7' } },
+            { A: { text: '사업시설관리, 사업 지원 및 임대 서비스업', class: 'ac' }, B: { text: '63,297' }, C: { text: '7.3' } },
+            { A: { text: '공공행정, 국방 및 사회보장 행정', class: 'ac' }, B: { text: '75,708' }, C: { text: '8.7' } },
+            { A: { text: '교육 서비스업', class: 'ac' }, B: { text: '28,852' }, C: { text: '3.3' } },
+            { A: { text: '보건업 및 사회복지 서비스업', class: 'ac' }, B: { text: '144,115' }, C: { text: '16.5' } },
+            { A: { text: '예술, 스포츠 및 여가 관련 서비스업', class: 'ac' }, B: { text: '15,708' }, C: { text: '1.8' } },
+            { A: { text: '협회 및 단체, 수리 및 기타 개인 서비스업', class: 'ac' }, B: { text: '30,469' }, C: { text: '3.5' } },
+            { A: { text: '기타 및 무응답', class: 'ac' }, B: { text: '2,814' }, C: { text: '0.3' } },
+            { A: { text: '전체', class: 'ac' }, B: { text: '871,339' }, C: { text: '100.0' } },
         ],
     },
     //장애인 취업자의 직업(상위 5개)
@@ -541,27 +570,33 @@ const tableDataSet = {
         meta: {
             id: '110',
             tableInfo: { class: 'table' },
-            tableTitle: '장애인 취업자의 직업(상위 5개)',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '장애인 취업자의 직업',
             cols: [{ width: '40%' }, { width: '30%' }, { width: '30%' }],
             headers: [
                 {
                     title: '구분',
                 },
                 {
-                    title: '인원(명)',
+                    title: '인원',
                 },
                 {
-                    title: '비율(%)',
+                    title: '비율',
                 },
             ],
         },
         data: [
-            { A: { text: '단순노무 종사자' }, B: { text: ' 272,549 ' }, C: { text: ' 31.3 ' } },
-            { A: { text: '사무 종사자' }, B: { text: ' 135,377 ' }, C: { text: ' 15.5 ' } },
-            { A: { text: '장치·기계 조작 및 조립종사자' }, B: { text: ' 101,395 ' }, C: { text: ' 11.6 ' } },
-            { A: { text: '농림어업 숙련 종사자' }, B: { text: ' 86,069 ' }, C: { text: ' 9.9 ' } },
-            { A: { text: '기능원 및 관련기능 종사자' }, B: { text: ' 76,495 ' }, C: { text: ' 8.8 ' } },
-            { A: { text: '전체' }, B: { text: ' 871,339 ' }, C: { text: ' 100.0 ' } },
+            { A: { text: '관리자', class: 'ac' }, B: { text: '6,685' }, C: { text: '0.8' } },
+            { A: { text: '전문가 및 관련 종사자', class: 'ac' }, B: { text: '72,047' }, C: { text: '8.3' } },
+            { A: { text: '사무 종사자', class: 'ac' }, B: { text: '135,377' }, C: { text: '15.5' } },
+            { A: { text: '서비스 종사자', class: 'ac' }, B: { text: '65,360' }, C: { text: '7.5' } },
+            { A: { text: '판매 종사자', class: 'ac' }, B: { text: '53,506' }, C: { text: '6.1' } },
+            { A: { text: '농림어업 숙련 종사자', class: 'ac' }, B: { text: '86,069' }, C: { text: '9.9' } },
+            { A: { text: '기능원 및 관련 기능 종사자', class: 'ac' }, B: { text: '76,495' }, C: { text: '8.8' } },
+            { A: { text: '장비/기계 조작 및 조립 종사자', class: 'ac' }, B: { text: '101,395' }, C: { text: '11.6' } },
+            { A: { text: '단순 노무 종사자', class: 'ac' }, B: { text: '272,549' }, C: { text: '31.3' } },
+            { A: { text: '기타 및 무응답', class: 'ac' }, B: { text: '1,858' }, C: { text: '0.2' } },
+            { A: { text: '전체', class: 'ac' }, B: { text: '871,339' }, C: { text: '100.0' } },
         ],
     },
     //장애인 취업자의 직장(일자리) 유형
@@ -569,26 +604,27 @@ const tableDataSet = {
         meta: {
             id: '110',
             tableInfo: { class: 'table' },
-            tableTitle: '장애인 취업자의 직업(상위 5개)',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '장애인 취업자의 직장(일자리) 유형',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
             headers: [
                 {
                     title: '구분',
                 },
                 {
-                    title: '인원(명)',
+                    title: '인원',
                 },
                 {
-                    title: '비율(%)',
+                    title: '비율',
                 },
             ],
         },
         data: [
-            { A: { text: '장애인 직업재활시설 일자리' }, B: { text: ' 31,352 ' }, C: { text: ' 3.6 ' } },
-            { A: { text: '정부재정지원 일자리' }, B: { text: ' 140,365 ' }, C: { text: ' 16.1 ' } },
-            { A: { text: '공무원, 교사 등 정부 및 공공기관 일자리' }, B: { text: ' 55,711 ' }, C: { text: ' 6.4 ' } },
-            { A: { text: '그 외 일반사업체' }, B: { text: ' 643,911 ' }, C: { text: ' 73.9 ' } },
-            { A: { text: '전체' }, B: { text: ' 871,339 ' }, C: { text: ' 100.0 ' } },
+            { A: { text: '장애인 직업재활시설 일자리', class: 'ac' }, B: { text: ' 31,352 ' }, C: { text: ' 3.6 ' } },
+            { A: { text: '정부재정지원 일자리', class: 'ac' }, B: { text: ' 140,365 ' }, C: { text: ' 16.1 ' } },
+            { A: { text: '공무원, 교사 등 정부 및 공공기관 일자리', class: 'ac' }, B: { text: ' 55,711 ' }, C: { text: ' 6.4 ' } },
+            { A: { text: '그 외 일반사업체', class: 'ac' }, B: { text: ' 643,911 ' }, C: { text: ' 73.9 ' } },
+            { A: { text: '전체', class: 'ac' }, B: { text: ' 871,339 ' }, C: { text: ' 100.0 ' } },
         ],
     },
 
@@ -597,6 +633,7 @@ const tableDataSet = {
         meta: {
             id: '110',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 만원)',
             tableTitle: '장애인 임금근로자의 최근 3개월 월평균 임금',
             cols: [{ width: '50%' }, { width: '50%' }],
             headers: [
@@ -604,7 +641,7 @@ const tableDataSet = {
                     title: '구분',
                 },
                 {
-                    title: '최근 3개월 월평균 임금(만원)',
+                    title: '최근 3개월 월평균 임금',
                 },
             ],
         },
@@ -619,6 +656,7 @@ const tableDataSet = {
         meta: {
             id: '109',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애인 임금근로자의 비정규직 규모',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
             headers: [
@@ -627,10 +665,10 @@ const tableDataSet = {
                     colSpan: 2,
                 },
                 {
-                    title: '인원(명)',
+                    title: '인원',
                 },
                 {
-                    title: '비율(%)',
+                    title: '비율',
                 },
             ],
         },
@@ -658,6 +696,7 @@ const tableDataSet = {
         meta: {
             id: '109',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애인 비경제활동인구의 지난주 활동상태',
             cols: [{ width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
@@ -666,10 +705,10 @@ const tableDataSet = {
                     colSpan: 2,
                 },
                 {
-                    title: '인원(명)',
+                    title: '인원',
                 },
                 {
-                    title: '비율(%)',
+                    title: '비율',
                 },
             ],
         },
@@ -677,14 +716,13 @@ const tableDataSet = {
             {
                 a: { text: '지난주 활동상태', class: 'ac' },
                 child: [
-                    { A: { text: '육아' }, C: { text: '2,532' }, D: { text: '0.2' } },
-                    { A: { text: '가사' }, C: { text: '217,612' }, D: { text: '13.1' } },
-                    { A: { text: '재학·수강 등' }, C: { text: '36,491' }, D: { text: '2.2' } },
-                    { A: { text: '연로' }, C: { text: '257,989' }, D: { text: '15.6' } },
-                    { A: { text: '심신장애' }, C: { text: '618,992' }, D: { text: '37.4' } },
-                    { A: { text: '심신장애' }, C: { text: '618,992' }, D: { text: '37.4' } },
-                    { A: { text: '기타(쉬었음)' }, B: { text: '494,844' }, C: { text: '29.9' } },
-                    { A: { text: '기타(쉬었음 외)' }, B: { text: '27,810' }, C: { text: '1.7' } },
+                    { A: { text: '육아', class: 'ac' }, C: { text: '2,532' }, D: { text: '0.2' } },
+                    { A: { text: '가사', class: 'ac' }, C: { text: '217,612' }, D: { text: '13.1' } },
+                    { A: { text: '재학·수강 등', class: 'ac' }, C: { text: '36,491' }, D: { text: '2.2' } },
+                    { A: { text: '연로', class: 'ac' }, C: { text: '257,989' }, D: { text: '15.6' } },
+                    { A: { text: '심신장애', class: 'ac' }, C: { text: '618,992' }, D: { text: '37.4' } },
+                    { A: { text: '기타(쉬었음)', class: 'ac' }, B: { text: '494,844' }, C: { text: '29.9' } },
+                    { A: { text: '기타(쉬었음 외)', class: 'ac' }, B: { text: '27,810' }, C: { text: '1.7' } },
                 ],
             },
             {
@@ -704,9 +742,10 @@ const tableDataSet = {
         meta: {
             id: '109',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애인 비경제활동인구의 향후 일할 의사',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분', colSpan: 2, rowSpan: 3 }, { title: '인원(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분', colSpan: 2, rowSpan: 3 }, { title: '인원' }, { title: '비율' }],
         },
         data: [
             {
@@ -722,11 +761,11 @@ const tableDataSet = {
                 child: [
                     { A: { text: '일할 의사 있음', class: 'ac' }, B: { text: '52,739' }, C: { text: '3.5' } },
                     { A: { text: '일할 의사 없음', class: 'ac' }, B: { text: '1,475,815' }, C: { text: '96.5' } },
-                    { A: { text: '소계', class: 'ac' }, B: { text: '1,285,554' }, C: { text: '100.0' } },
+                    { A: { text: '소계', class: 'ac' }, B: { text: '1,528,554' }, C: { text: '100.0' } },
                 ],
             },
             {
-                a: { text: '전체 일할 의사', class: 'ac' },
+                a: { text: '향후 일할 의사 전체', class: 'ac' },
                 child: [
                     { A: { text: '일할 의사 있음', class: 'ac' }, B: { text: '180,455' }, C: { text: '10.9' } },
                     { A: { text: '일할 의사 없음', class: 'ac' }, B: { text: '1,475,815' }, C: { text: '89.1' } },
@@ -740,6 +779,7 @@ const tableDataSet = {
     chart_201: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 계, %)',
             tableTitle: '장애인 고용기업체 비율',
             cols: [{ width: '110px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }],
             headers: [
@@ -820,6 +860,7 @@ const tableDataSet = {
     chart_202: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애인 근로자 비율',
             cols: [{ width: '30%' }, { width: '30%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
@@ -858,7 +899,7 @@ const tableDataSet = {
         data: [
             { A: { text: '남성', class: 'ac' }, B: { text: '9,055,852' }, C: { text: '60.8' }, D: { text: '146,786' }, E: { text: '70.1' }, F: { text: '1.62' } },
             { A: { text: '여성', class: 'ac' }, B: { text: '5,841,019' }, C: { text: '39.2' }, D: { text: '62,539' }, E: { text: '29.9' }, F: { text: '1.07' } },
-            { A: { text: '전체', class: 'ac' }, B: { text: '14,896,871' }, C: { text: '100' }, D: { text: '209,325' }, E: { text: '100' }, F: { text: '1.41' } },
+            { A: { text: '전체', class: 'ac' }, B: { text: '14,896,871' }, C: { text: '100.0' }, D: { text: '209,325' }, E: { text: '100.0' }, F: { text: '1.41' } },
         ],
     },
     //장애인 임금근로자의 최근 3개월 월평균 임금
@@ -866,6 +907,7 @@ const tableDataSet = {
         meta: {
             id: '110',
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애인 임금근로자의 최근 3개월 월평균 임금',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
             headers: [{ title: '구분', colSpan: 2 }, { title: '장애인 근로자 수' }, { title: '비율' }],
@@ -900,6 +942,7 @@ const tableDataSet = {
     chart_205: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인 근로자 채용 이유',
             cols: [{ width: '200px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }],
             headers: [
@@ -994,6 +1037,7 @@ const tableDataSet = {
     chart_206: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인 근로자 채용 방법',
             cols: [{ width: '200px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }],
             headers: [
@@ -1078,6 +1122,7 @@ const tableDataSet = {
     chart_207: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인 근로자 채용 시 애로사항(1순위) (상위 5개)',
             cols: [{ width: '200px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }],
             headers: [
@@ -1172,6 +1217,7 @@ const tableDataSet = {
     chart_208: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '중증장애인 수행가능 직무가 있는 비율',
             cols: [{ width: '200px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }, { width: '100px' }],
             headers: [
@@ -1245,6 +1291,7 @@ const tableDataSet = {
     chart_209: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인 수행가능 직무가 있는 비율',
             cols: [{ width: '70%' }, { width: '30%' }],
             headers: [{ title: '구분' }, { title: '전체' }],
@@ -1261,6 +1308,7 @@ const tableDataSet = {
     chart_210: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인 근로자 채용지원 서비스 필요 비율(중복응답)',
             cols: [{ width: '40%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
@@ -1281,9 +1329,9 @@ const tableDataSet = {
             { A: { text: '현장 직무에 실제 활용 가능하도록 일정기간 수행하는 훈련 제공', class: 'al' }, B: { text: '22.9 ' }, C: { text: '28.4 ' }, D: { text: '22.3 ' } },
             {
                 A: { text: '기업의 장애인 고용환경 분석·진단부터 적합인력 지원까지 체계적인 고용서비스 설계를 위한 지원', class: 'al' },
-                B: { text: '23.0 ' },
-                C: { text: '30.7 ' },
-                D: { text: '22.1 ' },
+                B: { text: '23.0' },
+                C: { text: '30.7' },
+                D: { text: '22.1' },
             },
             { A: { text: '(추정 수)', class: 'ac' }, B: { text: '(457,746)' }, C: { text: '(46,429)' }, D: { text: '(411,317)' } },
         ],
@@ -1292,6 +1340,7 @@ const tableDataSet = {
     chart_211: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인 근로자 고용유지 서비스 필요 비율(중복응답)',
             cols: [{ width: '40%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
@@ -1317,6 +1366,7 @@ const tableDataSet = {
     chart_212: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인 고용 증진을 위해 필요한 사항(1순위) (상위 6개)',
             cols: [{ width: '40%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
@@ -1335,7 +1385,7 @@ const tableDataSet = {
             { A: { text: '적합한 장애인력 구인 서비스 강화', class: 'al' }, B: { text: '11.1 ' }, C: { text: '9.7 ' }, D: { text: '11.2 ' } },
             { A: { text: '부담금(부담기초액) 인상', class: 'al' }, B: { text: '10.7 ' }, C: { text: '11.9 ' }, D: { text: '10.6 ' } },
             { A: { text: '장애인의 직업적 능력 향상을 위한 교육훈련 서비스 강화', class: 'al' }, B: { text: '5.2 ' }, C: { text: '1.4 ' }, D: { text: '5.6 ' } },
-            { A: { text: '전체', class: 'ac' }, B: { text: '100 ' }, C: { text: '100 ' }, D: { text: '100 ' } },
+            { A: { text: '전체', class: 'ac' }, B: { text: '100.0 ' }, C: { text: '100.0 ' }, D: { text: '100.0 ' } },
             { A: { text: '(추정 수)', class: 'ac' }, B: { text: '(457,746)' }, C: { text: '(46,429)' }, D: { text: '(411,317)' } },
         ],
     },
@@ -1343,6 +1393,7 @@ const tableDataSet = {
     chart_214: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인 의무고용률을 달성했지만 추가채용 의사가 있는 비율',
             cols: [{ width: '50%' }, { width: '15%' }, { width: '15%' }, { width: '15%' }, { width: '15%' }],
             headers: [
@@ -1365,6 +1416,7 @@ const tableDataSet = {
     chart_215: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '향후 3년 내 장애인 의무고용률 달성 전망',
             cols: [{ width: '40%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
@@ -1389,6 +1441,7 @@ const tableDataSet = {
     chart_216: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : %, 개)',
             tableTitle: '장애인고용 비의무기업체의 향후 장애인 채용 의사',
             cols: [{ width: '40%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
@@ -1413,9 +1466,10 @@ const tableDataSet = {
     chart_301: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '15세 이상 발달장애인 인구',
             cols: 3,
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '지적장애', class: 'ac' }, B: { text: ' 198,975 ' }, C: { text: ' 90.9 ' } },
@@ -1428,9 +1482,10 @@ const tableDataSet = {
     chart_302: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '중복장애 유무',
             cols: 4,
-            headers: [{ title: '구분', colSpan: 2 }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분', colSpan: 2 }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             {
@@ -1455,9 +1510,10 @@ const tableDataSet = {
     chart_303: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '다른 사람의 말을 이해하는 수준',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '두 문장 이상 수준으로 제시해도 이해함', class: 'al' }, B: { text: ' 120,123 ' }, C: { text: ' 54.9 ' } },
@@ -1471,9 +1527,10 @@ const tableDataSet = {
     chart_304: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '자신의 의사를 말로 표현하는 수준',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '두 단어 이상을 사용한 표현이나 문장으로 의사를 표현함', class: 'al' }, B: { text: ' 125,365 ' }, C: { text: ' 57.2 ' } },
@@ -1488,9 +1545,10 @@ const tableDataSet = {
     chart_305: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '인지능력 수준',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분', colSpan: 2 }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분', colSpan: 2 }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             {
@@ -1505,7 +1563,7 @@ const tableDataSet = {
                 a: { text: '한글 쓰기', class: 'ac' },
                 child: [
                     { A: { text: '불가능', class: 'al' }, B: { text: '71,036' }, C: { text: '32.4' } },
-                    { A: { text: '제한적으로 가능', class: 'al' }, B: { text: '67,966' }, C: { text: '31' } },
+                    { A: { text: '제한적으로 가능', class: 'al' }, B: { text: '67,966' }, C: { text: '31.0' } },
                     { A: { text: '가능', class: 'al' }, B: { text: '79,822' }, C: { text: '36.4' } },
                 ],
             },
@@ -1551,8 +1609,8 @@ const tableDataSet = {
             },
             {
                 a: { text: '전체', class: 'ac', colSpan: 2 },
-                b: { text: '219,000', class: 'ac' },
-                c: { text: '100.0', class: 'ac' },
+                b: { text: '219,000', class: 'ar' },
+                c: { text: '100.0', class: 'ar' },
             },
         ],
     },
@@ -1560,9 +1618,10 @@ const tableDataSet = {
     chart_306: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '도전적 행동 발생 정도',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분', colSpan: 2 }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분', colSpan: 2 }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             {
@@ -1616,8 +1675,8 @@ const tableDataSet = {
             {
                 a: { text: '위축된 행동이나 부주의한 행동', class: 'ac' },
                 child: [
-                    { A: { text: '전혀 안함', class: 'al' }, B: { text: '157,779' }, C: { text: '72' } },
-                    { A: { text: '가끔 함', class: 'al' }, B: { text: '50,322' }, C: { text: '23' } },
+                    { A: { text: '전혀 안함', class: 'al' }, B: { text: '157,779' }, C: { text: '72.0' } },
+                    { A: { text: '가끔 함', class: 'al' }, B: { text: '50,322' }, C: { text: '23.0' } },
                     { A: { text: '자주 함', class: 'al' }, B: { text: '10,806' }, C: { text: '4.9' } },
                 ],
             },
@@ -1631,8 +1690,8 @@ const tableDataSet = {
             },
             {
                 a: { text: '전체', class: 'ac', colSpan: 2 },
-                b: { text: '219,000', class: 'ac' },
-                c: { text: '100.0', class: 'ac' },
+                b: { text: '219,000', class: 'ar' },
+                c: { text: '100.0', class: 'ar' },
             },
         ],
     },
@@ -1640,9 +1699,10 @@ const tableDataSet = {
     chart_307: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '최종 학력',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분', colSpan: 2 }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분', colSpan: 2 }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             {
@@ -1673,9 +1733,10 @@ const tableDataSet = {
     chart_308: {
         meta: {
             tableInfo: { class: 'table' },
-            tableTitle: '취업자가 일(취업)하기로 결심한 데 가장 큰 영향을 미친 사람',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '취업자가 일하기로 결심한 데 영향을 미친 사람',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '장애인 당사자', class: 'al' }, B: { text: ' 20,254 ' }, C: { text: ' 31.1 ' } },
@@ -1691,9 +1752,10 @@ const tableDataSet = {
     chart_309: {
         meta: {
             tableInfo: { class: 'table' },
-            tableTitle: '취업자의 현재 직장(사업체) 유형',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '취업자의 현재 직장 유형',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '장애인 직업재활시설(보호작업장, 근로사업장 등)', class: 'al' }, B: { text: ' 15,597 ' }, C: { text: ' 23.9 ' } },
@@ -1709,9 +1771,10 @@ const tableDataSet = {
     chart_310: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '취업자가 주로 수행하는 업무 종류',
             cols: [{ width: '70%' }, { width: '15%' }, { width: '15%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '서비스(배송, 주유, 미용, 판매, 진열, 서빙, 돌봄 등)', class: 'al' }, B: { text: ' 9,774 ' }, C: { text: ' 15.0 ' } },
@@ -1728,9 +1791,10 @@ const tableDataSet = {
     chart_311: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '취업자가 장애와 관련해서 필요한 지원',
             cols: [{ width: '35%' }, { width: '35%' }, { width: '15%' }, { width: '15%' }],
-            headers: [{ title: '구분', colSpan: 2 }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분', colSpan: 2 }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             {
@@ -1770,8 +1834,8 @@ const tableDataSet = {
             },
             {
                 a: { text: '전체', class: 'ac', colSpan: 2 },
-                b: { text: '65,144', class: 'ac' },
-                c: { text: '100.0', class: 'ac' },
+                b: { text: '65,144', class: 'ar' },
+                c: { text: '100.0', class: 'ar' },
             },
         ],
     },
@@ -1779,9 +1843,10 @@ const tableDataSet = {
     chart_312: {
         meta: {
             tableInfo: { class: 'table' },
-            tableTitle: '미취업자 당사자(PL, ER)와 보호자의 취업 희망 여부',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '미취업한 당사자와 보호자의 취업 희망 여부',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '당사자 희망 & 보호자 희망', class: 'al' }, B: { text: ' 33,387 ' }, C: { text: ' 40.7 ' } },
@@ -1795,9 +1860,10 @@ const tableDataSet = {
     chart_313: {
         meta: {
             tableInfo: { class: 'table' },
-            tableTitle: '발달장애인 당사자가 일을 하는 이유',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '취업자가 일을 하는 이유',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '나는 돈을 벌고 싶다', class: 'al' }, B: { text: ' 38,909 ' }, C: { text: ' 72.3 ' } },
@@ -1812,9 +1878,10 @@ const tableDataSet = {
     chart_314: {
         meta: {
             tableInfo: { class: 'table' },
-            tableTitle: '취업 발달장애인 당사자의 일자리 및 업무 주요 특성',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '취업자의 일자리 및 업무에 대한 생각',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '나는 일 다니는 것이 좋다', class: 'al' }, B: { text: ' 39,408 ' }, C: { text: ' 73.3 ' } },
@@ -1828,23 +1895,37 @@ const tableDataSet = {
     chart_315: {
         meta: {
             tableInfo: { class: 'table' },
-            tableTitle: '미취업 발달장애인 당사자의 취업 희망',
-            cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            annotation: '(단위 : 명, %)',
+            tableTitle: '미취업자의 취업 희망 여부',
+            cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
+            headers: [{ title: '구분', colSpan: 2 }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
-            { A: { text: '취업 희망', class: 'al' }, B: { text: ' 44,048 ' }, C: { text: ' 53.5 ' } },
-            { A: { text: '당장 내일부터 일할 의향', class: 'al' }, B: { text: ' 19,946 ' }, C: { text: ' 45.3 ' } },
-            { A: { text: '전체', class: 'al' }, B: { text: ' 82,327 ' }, C: { text: ' 100.0 ' } },
+            {
+                a: { text: '취업 희망 여부', class: 'ac' },
+                child: [
+                    { A: { text: '취업 희망', class: 'ac' }, B: { text: '44,048' }, C: { text: '53.5' } },
+                    { A: { text: '취업 비희망', class: 'ac' }, B: { text: '37,114' }, C: { text: '45.1' } },
+                ],
+            },
+            {
+                a: { text: '당장 내일부터 일할 의향', class: 'ac' },
+                child: [
+                    { A: { text: '네, 일할래요', class: 'ac' }, B: { text: '19,946' }, C: { text: '45.3' } },
+                    { A: { text: '아니요, 안할래요', class: 'ac' }, B: { text: '24,103' }, C: { text: '54.7' } },
+                ],
+            },
+            { A: { text: '전 체', class: 'ac', colSpan: 2 }, B: { text: ' 82,327 ', class: 'ar' }, C: { text: ' 100.0 ', class: 'ar' } },
         ],
     },
     //발달장애인 당사자가 나중에 살고 싶은 방식
     chart_316: {
         meta: {
             tableInfo: { class: 'table' },
-            tableTitle: '발달장애인 당사자가 나중에 살고 싶은 방식',
+            annotation: '(단위 : 명, %)',
+            tableTitle: '나중에 살고 싶은 방식',
             cols: [{ width: '50%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '추정수(명)' }, { title: '비율(%)' }],
+            headers: [{ title: '구분' }, { title: '추정 수' }, { title: '비율' }],
         },
         data: [
             { A: { text: '나는 가족(부모님)과 함께 살고 싶다', class: 'al' }, B: { text: ' 71,751 ' }, C: { text: ' 52.7 ' } },
@@ -1858,6 +1939,7 @@ const tableDataSet = {
     chart_401: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '등록장애인 추이',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
             headers: [{ title: '구분' }, { title: '등록장애인 수' }, { title: '등록장애인 비율' }, { title: '전체인구 수' }],
@@ -1902,40 +1984,42 @@ const tableDataSet = {
     chart_402: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '등록장애인 성별 분포',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '남성' }, { title: '여성' }, { title: '여성비율(%)' }],
+            headers: [{ title: '구분' }, { title: '남성' }, { title: '여성' }, { title: '여성비율' }],
         },
         data: [
-            { A: { text: '01', class: 'ac' }, B: { text: '1,134,177' }, C: { text: '779,356' }, D: { text: '354,821' }, E: { text: '31.3' } },
-            { A: { text: '02', class: 'ac' }, B: { text: '1,294,254' }, C: { text: '872,739' }, D: { text: '421,515' }, E: { text: '32.6' } },
-            { A: { text: '03', class: 'ac' }, B: { text: '1,454,215' }, C: { text: '964,363' }, D: { text: '489,852' }, E: { text: '33.7' } },
-            { A: { text: '04', class: 'ac' }, B: { text: '1,610,994' }, C: { text: '1,047,562' }, D: { text: '563,432' }, E: { text: '35.0' } },
-            { A: { text: '05', class: 'ac' }, B: { text: '1,789,443' }, C: { text: '1,138,641' }, D: { text: '650,802' }, E: { text: '36.4' } },
-            { A: { text: '06', class: 'ac' }, B: { text: '1,967,326' }, C: { text: '1,223,644' }, D: { text: '743,682' }, E: { text: '37.8' } },
-            { A: { text: '07', class: 'ac' }, B: { text: '2,104,889' }, C: { text: '1,284,089' }, D: { text: '820,800' }, E: { text: '39.0' } },
-            { A: { text: '08', class: 'ac' }, B: { text: '2,246,965' }, C: { text: '1,345,557' }, D: { text: '901,408' }, E: { text: '40.1' } },
-            { A: { text: '09', class: 'ac' }, B: { text: '2,429,547' }, C: { text: '1,425,896' }, D: { text: '1,003,651' }, E: { text: '41.3' } },
-            { A: { text: '10', class: 'ac' }, B: { text: '2,517,312' }, C: { text: '1,468,333' }, D: { text: '1,048,979' }, E: { text: '41.7' } },
-            { A: { text: '11', class: 'ac' }, B: { text: '2,519,241' }, C: { text: '1,466,460' }, D: { text: '1,052,781' }, E: { text: '41.8' } },
-            { A: { text: '12', class: 'ac' }, B: { text: '2.511.159' }, C: { text: '1,460,490' }, D: { text: '1,050,669' }, E: { text: '41.8' } },
-            { A: { text: '13', class: 'ac' }, B: { text: '2,501,112' }, C: { text: '1,453,606' }, D: { text: '1,047,506' }, E: { text: '41.9' } },
-            { A: { text: '14', class: 'ac' }, B: { text: '2,494,460' }, C: { text: '1,448,878' }, D: { text: '1,045,582' }, E: { text: '41.9' } },
-            { A: { text: '15', class: 'ac' }, B: { text: '2,490,406' }, C: { text: '1,446,943' }, D: { text: '1,043,463' }, E: { text: '41.9' } },
-            { A: { text: '16', class: 'ac' }, B: { text: '2,511,051' }, C: { text: '1,457,588' }, D: { text: '1,053,463' }, E: { text: '42.0' } },
-            { A: { text: '17', class: 'ac' }, B: { text: '2,545,637' }, C: { text: '1,475,550' }, D: { text: '1,070,087' }, E: { text: '42.0' } },
-            { A: { text: '18', class: 'ac' }, B: { text: '2,585,876' }, C: { text: '1,496,298' }, D: { text: '1,089,578' }, E: { text: '42.1' } },
-            { A: { text: '19', class: 'ac' }, B: { text: '2,633,026' }, C: { text: '1,513,206' }, D: { text: '1,105,712' }, E: { text: '42.2' } },
-            { A: { text: '20', class: 'ac' }, B: { text: '2,644,700' }, C: { text: '1,521,260' }, D: { text: '1,111,766' }, E: { text: '42.2' } },
-            { A: { text: '21', class: 'ac' }, B: { text: '1,528,280' }, C: { text: ' 1,528,280 ' }, D: { text: ' 1,116,420 ' }, E: { text: '42.2' } },
-            { A: { text: '22', class: 'ac' }, B: { text: '2,648,424' }, C: { text: ' 1,532,230 ' }, D: { text: ' 1,116,194 ' }, E: { text: '42.1' } },
-            { A: { text: '23', class: 'ac' }, B: { text: '2,641,896' }, C: { text: ' 1,529,806 ' }, D: { text: ' 1,112,090 ' }, E: { text: '42.1' } },
+            { A: { text: '01', class: 'ac' }, B: { text: '779,356' }, C: { text: '354,821' }, D: { text: '31.3' } },
+            { A: { text: '02', class: 'ac' }, B: { text: '872,739' }, C: { text: '421,515' }, D: { text: '32.6' } },
+            { A: { text: '03', class: 'ac' }, B: { text: '964,363' }, C: { text: '489,852' }, D: { text: '33.7' } },
+            { A: { text: '04', class: 'ac' }, B: { text: '1,047,562' }, C: { text: '563,432' }, D: { text: '35.0' } },
+            { A: { text: '05', class: 'ac' }, B: { text: '1,138,641' }, C: { text: '650,802' }, D: { text: '36.4' } },
+            { A: { text: '06', class: 'ac' }, B: { text: '1,223,644' }, C: { text: '743,682' }, D: { text: '37.8' } },
+            { A: { text: '07', class: 'ac' }, B: { text: '1,284,089' }, C: { text: '820,800' }, D: { text: '39.0' } },
+            { A: { text: '08', class: 'ac' }, B: { text: '1,345,557' }, C: { text: '901,408' }, D: { text: '40.1' } },
+            { A: { text: '09', class: 'ac' }, B: { text: '1,425,896' }, C: { text: '1,003,651' }, D: { text: '41.3' } },
+            { A: { text: '10', class: 'ac' }, B: { text: '1,468,333' }, C: { text: '1,048,979' }, D: { text: '41.7' } },
+            { A: { text: '11', class: 'ac' }, B: { text: '1,466,460' }, C: { text: '1,052,781' }, D: { text: '41.8' } },
+            { A: { text: '12', class: 'ac' }, B: { text: '1,460,490' }, C: { text: '1,050,669' }, D: { text: '41.8' } },
+            { A: { text: '13', class: 'ac' }, B: { text: '1,453,606' }, C: { text: '1,047,506' }, D: { text: '41.9' } },
+            { A: { text: '14', class: 'ac' }, B: { text: '1,448,878' }, C: { text: '1,045,582' }, D: { text: '41.9' } },
+            { A: { text: '15', class: 'ac' }, B: { text: '1,446,943' }, C: { text: '1,043,463' }, D: { text: '41.9' } },
+            { A: { text: '16', class: 'ac' }, B: { text: '1,457,588' }, C: { text: '1,053,463' }, D: { text: '42.0' } },
+            { A: { text: '17', class: 'ac' }, B: { text: '1,475,550' }, C: { text: '1,070,087' }, D: { text: '42.0' } },
+            { A: { text: '18', class: 'ac' }, B: { text: '1,496,298' }, C: { text: '1,089,578' }, D: { text: '42.1' } },
+            { A: { text: '19', class: 'ac' }, B: { text: '1,513,206' }, C: { text: '1,105,712' }, D: { text: '42.2' } },
+            { A: { text: '20', class: 'ac' }, B: { text: '1,521,260' }, C: { text: '1,111,766' }, D: { text: '42.2' } },
+            { A: { text: '21', class: 'ac' }, B: { text: ' 1,528,280 ' }, C: { text: ' 1,116,420 ' }, D: { text: '42.2' } },
+            { A: { text: '22', class: 'ac' }, B: { text: ' 1,532,230 ' }, C: { text: ' 1,116,194 ' }, D: { text: '42.1' } },
+            { A: { text: '23', class: 'ac' }, B: { text: ' 1,529,806 ' }, C: { text: ' 1,112,090 ' }, D: { text: '42.1' } },
         ],
     },
     //등록장애인 연령 분포
     chart_403: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '등록장애인 연령 분포',
             cols: [{ width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [{ title: '구분' }, { title: '장애인' }, { title: '장애인 비율' }, { title: '전체인구' }, { title: '전체인구 비율' }],
@@ -1956,6 +2040,7 @@ const tableDataSet = {
     chart_404: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '65세 이상 등록장애인 비율',
             cols: [{ width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [{ title: '구분', colSpan: 2 }, { title: '2013' }, { title: '2018' }, { title: '2023' }],
@@ -1983,6 +2068,7 @@ const tableDataSet = {
     chart_405: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 천명)',
             tableTitle: '15-64세 등록장애인 추이',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
             headers: [{ title: '구분' }, { title: '전체' }, { title: '15~64세' }, { title: '65세 이상' }],
@@ -2012,6 +2098,7 @@ const tableDataSet = {
         meta: {
             tableInfo: { class: 'table' },
             tableTitle: '등록장애인 장애유형 분포',
+            annotation: '(단위 : 천명)',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
             headers: [{ title: '구분' }, { title: '2013' }, { title: '2018' }, { title: '2023' }],
         },
@@ -2037,9 +2124,10 @@ const tableDataSet = {
     chart_407: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '등록장애인 장애정도 분포',
             cols: [{ width: '25%' }, { width: '25%' }, { width: '25%' }, { width: '25%' }],
-            headers: [{ title: '구분' }, { title: '심한장애' }, { title: '심하지않은장애' }, { title: '심한장애 비중(%)' }],
+            headers: [{ title: '구분' }, { title: '심한장애' }, { title: '심하지않은장애' }, { title: '심한장애 비중' }],
         },
         data: [
             { A: { text: '01', class: 'ac' }, B: { text: '584,043' }, C: { text: '550,134' }, D: { text: '51.5' } },
@@ -2071,6 +2159,7 @@ const tableDataSet = {
     chart_408: {
         meta: {
             tableInfo: { class: 'table' },
+            annotation: '(단위 : 명, %)',
             tableTitle: '연령별 지체, 청각, 발달장애 비중 변화',
             cols: [
                 { width: '120px' },

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 Chart.register(ChartDataLabels);
 Chart.defaults.color = '#575757';
 Chart.defaults.font.family = 'Pretendard';
-Chart.defaults.layout.padding.top = 10;
+Chart.defaults.layout.padding.top = 15;
 
 Chart.defaults.set('plugins.datalabels', {
     align: 'top',

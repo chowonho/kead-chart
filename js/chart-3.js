@@ -289,6 +289,10 @@ const chartConfigs = {
                 tooltip: {
                     callbacks: {
                         title: clearTooltip,
+                        label: function (context) {
+                            const value = context.raw;
+                            return `${value.toFixed(1)}`;
+                        },
                     },
                 },
             },
@@ -323,6 +327,10 @@ const chartConfigs = {
                 tooltip: {
                     callbacks: {
                         title: clearTooltip,
+                        label: function (context) {
+                            const value = context.raw;
+                            return `${value.toFixed(1)}`;
+                        },
                     },
                 },
             },
@@ -344,6 +352,10 @@ const chartConfigs = {
                 tooltip: {
                     callbacks: {
                         title: clearTooltip,
+                        label: function (context) {
+                            const value = context.raw;
+                            return `${value.toFixed(1)}`;
+                        },
                     },
                 },
             },
@@ -365,6 +377,10 @@ const chartConfigs = {
                 tooltip: {
                     callbacks: {
                         title: clearTooltip,
+                        label: function (context) {
+                            const value = context.raw;
+                            return `${value.toFixed(1)}`;
+                        },
                     },
                 },
             },
@@ -386,6 +402,10 @@ const chartConfigs = {
                 tooltip: {
                     callbacks: {
                         title: clearTooltip,
+                        label: function (context) {
+                            const value = context.raw;
+                            return `${value.toFixed(1)}`;
+                        },
                     },
                 },
             },
@@ -449,6 +469,10 @@ const chartConfigs = {
                 tooltip: {
                     callbacks: {
                         title: clearTooltip,
+                        label: function (context) {
+                            const value = context.raw;
+                            return `${value.toFixed(1)}`;
+                        },
                     },
                 },
             },

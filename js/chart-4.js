@@ -45,6 +45,20 @@ Chart.defaults.set('plugins.datalabels', {
     },
 });
 
+// 숫자를 소수점 1자리로 포맷팅
+Chart.defaults.set('plugins.tooltip', {
+    callbacks: {
+        label: function (context) {
+            const datasetLabel = context.dataset.label;
+            const value = context.raw;
+            // 특정 데이터셋만 소수점으로 표시
+            if (datasetLabel === '장애인' || datasetLabel === '전체인구') {
+                return `${value.toFixed(1)}`;
+            }
+        },
+    },
+});
+
 const clearTooltip = (tooltipItems) => {
     return tooltipItems[0].label.replaceAll(',', '');
 };
@@ -188,6 +202,13 @@ const chartConfigs = {
                     display: true,
                 },
             },
+            scales: {
+                y: {
+                    grid: {
+                        display: false,
+                    },
+                },
+            },
         },
     },
     chart_404: {
@@ -216,6 +237,13 @@ const chartConfigs = {
                     enabled: true, // 툴팁 활성화 여부
                     mode: 'index', // 데이터 세트 인덱스별 툴팁 표시
                     intersect: true, // 마우스가 데이터 포인트 위에 있을 때만 표시
+                },
+            },
+            scales: {
+                y: {
+                    grid: {
+                        display: false,
+                    },
                 },
             },
         },
@@ -259,7 +287,11 @@ const chartConfigs = {
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    display: false,
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 6,
+                        boxHeight: 6,
+                    },
                 },
             },
             maxBarThickness: 20,

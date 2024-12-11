@@ -172,6 +172,7 @@ function handleClickOutside(element, boxEl) {
 // 모달창 열기
 function openModal(name) {
     const modalTarget = document.querySelector(`#${name}`);
+    console.log(modalTarget);
     const modalCloseBtn = modalTarget.querySelector('.modal-close-btn');
     modalTarget.classList.add('on');
     modalTarget.classList.remove('effect--out');

@@ -134,6 +134,7 @@ li {
 
 p {
     margin: 0;
+    word-break: keep-all;
 }
 
 * {
@@ -611,6 +612,16 @@ table caption {
     overflow: hidden;
 }
 
+.caption-unit {
+    text-align: right;
+    margin: 0 0 1rem 0;
+}
+
+.caption-title {
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+}
+
 .table-scroll {
     /* overflow: auto; */
 }
@@ -646,6 +657,7 @@ table caption {
     border: 1px solid #dbdbdb;
     padding: 1rem 1.6rem;
     overflow-wrap: break-word;
+    word-break: keep-all;
 }
 
 .table tbody td {
