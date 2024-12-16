@@ -128,7 +128,7 @@ const chartConfigs = {
                             const value = context.raw;
                             // 특정 데이터셋만 소수점으로 표시
                             if (datasetLabel === '등록장애인 비율') {
-                                return `${value.toFixed(1)}`;
+                                return `${datasetLabel}: ${value.toFixed(1)}`;
                             }
                         },
                     },
@@ -179,7 +179,7 @@ const chartConfigs = {
                             const value = context.raw;
                             // 특정 데이터셋만 소수점으로 표시
                             if (datasetLabel === '여성 비율') {
-                                return `${value.toFixed(1)}`;
+                                return `${datasetLabel}: ${value.toFixed(1)}`;
                             }
                         },
                     },
@@ -381,7 +381,7 @@ const chartConfigs = {
                             const value = context.raw;
                             // 특정 데이터셋만 소수점으로 표시
                             if (datasetLabel === '심한장애 비율') {
-                                return `${value.toFixed(1)}`;
+                                return `${datasetLabel}: ${value.toFixed(1)}`;
                             }
                         },
                     },
@@ -424,8 +424,9 @@ const chartConfigs = {
                 tooltip: {
                     callbacks: {
                         label: function (context) {
+                            const datasetLabel = context.dataset.label;
                             const value = context.raw;
-                            return `${value.toFixed(1)}`;
+                            return `${datasetLabel}: ${value.toFixed(1)}`;
                         },
                     },
                 },
