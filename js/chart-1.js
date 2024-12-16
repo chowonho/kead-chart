@@ -45,6 +45,16 @@ Chart.defaults.set('plugins.datalabels', {
     },
 });
 
+Chart.defaults.set('plugins.tooltip', {
+    callbacks: {
+        label: function (context) {
+            // 숫자를 소수점 1자리로 포맷팅
+            let value = context.raw; // 현재 데이터 값
+            return `${value.toFixed(1)}`; // 소수점 1자리로 표시
+        },
+    },
+});
+
 const clearTooltip = (tooltipItems) => {
     return tooltipItems[0].label.replaceAll(',', '');
 };

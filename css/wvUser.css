@@ -75,6 +75,7 @@
 
 .main-title .main-rink img {
     position: relative;
+    top: -10px;
     z-index: 1;
 }
 
@@ -242,6 +243,10 @@ html:has(.not-scroll) .main-title .main-rink img {
     right: 15px;
 }
 
+.main-conts__item .main-rink img {
+    width: 80px;
+}
+
 .main-conts__item.on .main-rink {
     display: none;
 }
@@ -252,11 +257,15 @@ html:has(.not-scroll) .main-title .main-rink img {
 
 .main-conts__item.on .main-rink.btn--rink {
     display: block;
-    bottom: 135px;
+    bottom: 100px;
 }
 
-.main-conts__item:nth-child(4).on .main-rink {
-    /* display: block; */
+.main-conts__item:nth-child(1).on .main-rink {
+    bottom: 120px;
+}
+
+.main-conts__item.on .main-rink.btn--rink img {
+    width: auto;
 }
 
 .main-conts__item.on .main-conts__rinks {

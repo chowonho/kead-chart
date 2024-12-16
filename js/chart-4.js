@@ -46,28 +46,28 @@ Chart.defaults.set('plugins.datalabels', {
 });
 
 // 숫자를 소수점 1자리로 포맷팅
-Chart.defaults.set('plugins.tooltip', {
-    callbacks: {
-        label: function (context) {
-            const datasetLabel = context.dataset.label;
-            const value = context.raw;
-            // 특정 데이터셋만 소수점으로 표시
-            if (datasetLabel === '장애인' || datasetLabel === '전체인구') {
-                return `${value.toFixed(1)}`;
-            }
-        },
-    },
-});
+// Chart.defaults.set('plugins.tooltip', {
+//     callbacks: {
+//         label: function (context) {
+//             const datasetLabel = context.dataset.label;
+//             const value = context.raw;
+//             // 특정 데이터셋만 소수점으로 표시
+//             if (datasetLabel === '장애인' || datasetLabel === '전체인구' || datasetLabel === '등록장애인 비율' || datasetLabel === '여성 비율' || datasetLabel === '심한장애 비율') {
+//                 return `${value.toFixed(1)}`;
+//             }
+//         },
+//     },
+// });
 
-const clearTooltip = (tooltipItems) => {
-    return tooltipItems[0].label.replaceAll(',', '');
-};
+// const clearTooltip = (tooltipItems) => {
+//     return tooltipItems[0].label.replaceAll(',', '');
+// };
 
-Chart.defaults.set('plugins.tooltip', {
-    callbacks: {
-        title: clearTooltip,
-    },
-});
+// Chart.defaults.set('plugins.tooltip', {
+//     callbacks: {
+//         title: clearTooltip,
+//     },
+// });
 
 // 플러그인 정의
 const backgroundColorPlugin = {
@@ -121,6 +121,18 @@ const chartConfigs = {
                         boxHeight: 6,
                     },
                 },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            const datasetLabel = context.dataset.label;
+                            const value = context.raw;
+                            // 특정 데이터셋만 소수점으로 표시
+                            if (datasetLabel === '등록장애인 비율') {
+                                return `${value.toFixed(1)}`;
+                            }
+                        },
+                    },
+                },
             },
             scales: {
                 y: {
@@ -160,6 +172,18 @@ const chartConfigs = {
                         boxHeight: 6,
                     },
                 },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            const datasetLabel = context.dataset.label;
+                            const value = context.raw;
+                            // 특정 데이터셋만 소수점으로 표시
+                            if (datasetLabel === '여성 비율') {
+                                return `${value.toFixed(1)}`;
+                            }
+                        },
+                    },
+                },
             },
             scales: {
                 y: {
@@ -196,6 +220,14 @@ const chartConfigs = {
                         },
                         boxWidth: 6,
                         boxHeight: 6,
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;
+                                return `${value.toFixed(1)}`;
+                            },
+                        },
                     },
                 },
                 title: {
@@ -234,9 +266,12 @@ const chartConfigs = {
                     display: true,
                 },
                 tooltip: {
-                    enabled: true, // 툴팁 활성화 여부
-                    mode: 'index', // 데이터 세트 인덱스별 툴팁 표시
-                    intersect: true, // 마우스가 데이터 포인트 위에 있을 때만 표시
+                    callbacks: {
+                        label: function (context) {
+                            const value = context.raw;
+                            return `${value.toFixed(1)}`;
+                        },
+                    },
                 },
             },
             scales: {
@@ -339,6 +374,18 @@ const chartConfigs = {
                         boxHeight: 6,
                     },
                 },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            const datasetLabel = context.dataset.label;
+                            const value = context.raw;
+                            // 특정 데이터셋만 소수점으로 표시
+                            if (datasetLabel === '심한장애 비율') {
+                                return `${value.toFixed(1)}`;
+                            }
+                        },
+                    },
+                },
             },
             scales: {
                 y: {
@@ -372,6 +419,14 @@ const chartConfigs = {
                     labels: {
                         boxWidth: 6,
                         boxHeight: 6,
+                    },
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            const value = context.raw;
+                            return `${value.toFixed(1)}`;
+                        },
                     },
                 },
             },
