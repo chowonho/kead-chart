@@ -29,6 +29,9 @@ gsap.utils.toArray('.features-item').forEach((item, index) => {
         duration: 0.7,
         ease: 'elastic.out(1,0.5)',
         delay: index * 0.3,
+        onComplete: () => {
+            item.style.transform = 'revert-layer';
+        },
     });
 });
 
@@ -47,4 +50,3 @@ gsap.utils.toArray('.ani-up').forEach((a, index) => {
         delay: index * 0.2,
     });
 });
-
