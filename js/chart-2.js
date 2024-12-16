@@ -118,6 +118,19 @@ const chartConfigs = {
                 legend: {
                     display: false,
                 },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            let value = context.raw; // 현재 데이터 값
+                            return `${value.toFixed(2)}`; // 소수점 1자리로 표시
+                        },
+                    },
+                },
+                datalabels: {
+                    formatter: function (value) {
+                        return value.toFixed(2);
+                    },
+                },
             },
             maxBarThickness: 20,
             scales: scalesFalse,
