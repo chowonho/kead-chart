@@ -779,7 +779,7 @@ const tableDataSet = {
     chart_201: {
         meta: {
             tableInfo: { class: 'table' },
-            annotation: '(단위 : 개, %)',
+            annotation: '(단위 : 명, %)',
             tableTitle: '장애인 고용기업체 비율',
             cols: [{ width: '110px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }],
             headers: [
@@ -860,7 +860,7 @@ const tableDataSet = {
     chart_202: {
         meta: {
             tableInfo: { class: 'table' },
-            annotation: '(단위 : 개, %)',
+            annotation: '(단위 : 명, %)',
             tableTitle: '성별 장애인 근로자 비율',
             cols: [{ width: '30%' }, { width: '30%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
@@ -1299,7 +1299,7 @@ const tableDataSet = {
         data: [
             { A: { text: '대부분 업무에서 장애인이 수행할 직무가 있다', class: 'al' }, B: { text: '0.6 ' } },
             { A: { text: '제한적인 업무에서 장애인이 수행할 직무가 있다', class: 'al' }, B: { text: '30.2 ' } },
-            { A: { text: '장애인이 수행할 만한 직무를 찾기 힘들다', class: 'al' }, B: { text: '29.2 ' } },
+            { A: { text: '장애인이 수행할 만한 직무를 찾기 힘들다', class: 'al' }, B: { text: '69.2 ' } },
             { A: { text: '전체', class: 'ac' }, B: { text: '100.0 ' } },
             { A: { text: '(추정 수)', class: 'ac' }, B: { text: '(411,317)' } },
         ],
