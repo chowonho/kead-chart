@@ -341,8 +341,12 @@ main:has(.banner) {
     font-size: 3rem;
 }
 
-.banner.yellow .banner-title {
+.banner.yellow .banner-title,
+.banner.yellow .location-list li {
     color: #664e00;
+}
+.banner.yellow .location-list li img {
+    filter: invert(29%) sepia(51%) saturate(521%) hue-rotate(10deg) brightness(44%) contrast(101%);
 }
 
 .location-group {

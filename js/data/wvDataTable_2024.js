@@ -780,7 +780,7 @@ const tableDataSet = {
         meta: {
             tableInfo: { class: 'table' },
             annotation: '(단위 : 명, %)',
-            tableTitle: '장애인 고용기업체 비율',
+            tableTitle: '장애인 고용체 비율',
             cols: [{ width: '110px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }, { width: '80px' }, { width: '110px' }],
             headers: [
                 [
@@ -861,7 +861,7 @@ const tableDataSet = {
         meta: {
             tableInfo: { class: 'table' },
             annotation: '(단위 : 명, %)',
-            tableTitle: '성별 장애인 근로자 비율',
+            tableTitle: '장애인 근로자 비율',
             cols: [{ width: '30%' }, { width: '30%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
                 [
@@ -881,11 +881,11 @@ const tableDataSet = {
             { A: { text: '전체', class: 'al' }, B: { text: ' 14,896,871 ' }, C: { text: '100.0 ' }, D: { text: '209,325' }, E: { text: '100.0 ' }, F: { text: '1.41 ' } },
         ],
     },
-    //장애인 근로자 비율
+    //성별 장애인 근로자 비율
     chart_203: {
         meta: {
             tableInfo: { class: 'table' },
-            tableTitle: '장애인 근로자 비율',
+            tableTitle: '성별 장애인 근로자 비율',
             cols: [{ width: '30%' }, { width: '30%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
                 [
