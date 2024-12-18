@@ -886,6 +886,7 @@ const tableDataSet = {
         meta: {
             tableInfo: { class: 'table' },
             tableTitle: '성별 장애인 근로자 비율',
+            annotation: '(단위 : 명, %)',
             cols: [{ width: '30%' }, { width: '30%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }, { width: '20%' }],
             headers: [
                 [
