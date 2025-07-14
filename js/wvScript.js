@@ -4,6 +4,9 @@ window.addEventListener('DOMContentLoaded', () => {
     // 헤더 gnb 스크립트
     initGnb(header);
     initMobileGnb(mobileGnb);
+    Chart.defaults.plugins.tooltip.callbacks.label = function(context) {        
+        return context.label + ': ' + context.parsed.y.toFixed(1);
+    };
 });
 
 // PC
